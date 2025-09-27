@@ -108,8 +108,7 @@ export default function Home() {
                 Innovating Industrial Solutions Since 1948
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl">
-                We deliver cutting-edge industrial solutions with unmatched quality and reliability. 
-                From custom manufacturing to global supply chain management, we power industries worldwide.
+                Sanat Mansoor (SMC) leads with over 1,000 groundbreaking projects across seven product segments.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
