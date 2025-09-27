@@ -105,8 +105,7 @@ export default function Home() {
                 Industry Leader Since 1974
               </Badge>
               <h1 className="text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-                Precision Manufacturing for the
-                <span className="text-primary"> Modern World</span>
+                Innovating Industrial Solutions Since 1948
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl">
                 We deliver cutting-edge industrial solutions with unmatched quality and reliability. 
