@@ -92,16 +92,15 @@ export default function Home() {
       </motion.nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-8">
-        <div className="max-w-7xl mx-auto">
-          {/* Reworked hero: background image with centered content */}
-          <div className="relative overflow-hidden rounded-2xl bg-muted/30">
+      <section className="p-0">
+        <div className="w-full">
+          <div className="relative overflow-hidden min-h-screen">
             <img
               src="/logo_bg.svg"
               alt=""
               className="absolute inset-0 h-full w-full object-cover opacity-10 select-none pointer-events-none"
             />
-            <div className="relative px-6 py-16 md:py-24 flex flex-col items-center text-center">
+            <div className="relative z-10 h-full px-6 py-16 md:py-24 flex flex-col items-center justify-center text-center">
               <Badge variant="secondary" className="mb-6">
                 Industry Leader Since 1974
               </Badge>
