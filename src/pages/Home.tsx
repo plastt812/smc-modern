@@ -287,7 +287,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-muted/30" id="contact">
+      <section className="py-20 bg-muted/80" id="contact">
         <div className="max-w-7xl mx-auto px-8">
           <motion.div
             initial={{ y: 20, opacity: 0 }}
