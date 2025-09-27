@@ -73,7 +73,7 @@ export default function Home() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3 cursor-pointer" onClick={() => navigate("/")}>
               <img src="./logo.svg" alt="Logo" className="h-8 w-8" />
-              <span className="text-xl font-bold tracking-tight">IndustrialCorp</span>
+              <span className="text-xl font-bold tracking-tight">Sanat Mansoor</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
@@ -349,7 +349,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-4 md:mb-0">
               <img src="./logo.svg" alt="Logo" className="h-8 w-8" />
-              <span className="text-xl font-bold tracking-tight">IndustrialCorp</span>
+              <span className="text-xl font-bold tracking-tight">Sanat Mansoor</span>
             </div>
             <p className="text-muted-foreground">
               © 2024 IndustrialCorp. All rights reserved.
