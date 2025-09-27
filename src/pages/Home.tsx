@@ -96,7 +96,7 @@ export default function Home() {
         <div className="w-full">
           <div className="relative overflow-hidden min-h-screen">
             <img
-              src="/logo_bg.svg"
+              src="https://harmless-tapir-303.convex.cloud/api/storage/2bbcab05-180d-460f-b184-519c9f98ac09"
               alt=""
               className="absolute inset-0 h-full w-full object-cover opacity-10 select-none pointer-events-none"
             />
