@@ -94,12 +94,14 @@ export default function Home() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <motion.div
-              initial={{ x: -50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.6 }}
-            >
+          {/* Reworked hero: background image with centered content */}
+          <div className="relative overflow-hidden rounded-2xl bg-muted/30">
+            <img
+              src="/logo_bg.svg"
+              alt=""
+              className="absolute inset-0 h-full w-full object-cover opacity-10 select-none pointer-events-none"
+            />
+            <div className="relative px-6 py-16 md:py-24 flex flex-col items-center text-center">
               <Badge variant="secondary" className="mb-6">
                 Industry Leader Since 1974
               </Badge>
@@ -107,7 +109,7 @@ export default function Home() {
                 Precision Manufacturing for the
                 <span className="text-primary"> Modern World</span>
               </h1>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl">
                 We deliver cutting-edge industrial solutions with unmatched quality and reliability. 
                 From custom manufacturing to global supply chain management, we power industries worldwide.
               </p>
@@ -124,18 +126,7 @@ export default function Home() {
                   View Capabilities
                 </Button>
               </div>
-            </motion.div>
-            
-            <motion.div
-              initial={{ x: 50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative"
-            >
-              <div className="aspect-square bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 flex items-center justify-center">
-                <Factory className="h-48 w-48 text-primary/60" />
-              </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
