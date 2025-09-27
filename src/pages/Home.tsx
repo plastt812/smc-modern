@@ -100,7 +100,7 @@ export default function Home() {
               alt=""
               className="absolute inset-0 h-full w-full object-cover opacity-10 select-none pointer-events-none"
             />
-            <div className="relative z-10 h-full px-6 py-16 md:py-24 flex flex-col items-center justify-center text-center">
+            <div className="relative z-10 h-full px-6 flex flex-col items-center justify-center text-center">
               <Badge variant="secondary" className="mb-6">
                 Industry Leader Since 1974
               </Badge>
