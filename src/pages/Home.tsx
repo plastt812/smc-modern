@@ -94,13 +94,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="p-0">
         <div className="w-full">
-          <div className="relative overflow-hidden min-h-screen">
+          <div className="relative overflow-hidden min-h-screen flex items-center justify-center">
             <img
               src="https://harmless-tapir-303.convex.cloud/api/storage/2bbcab05-180d-460f-b184-519c9f98ac09"
               alt=""
               className="absolute inset-0 h-full w-full object-cover opacity-10 select-none pointer-events-none"
             />
-            <div className="relative z-10 h-full px-6 flex flex-col items-center justify-center text-center">
+            <div className="relative z-10 px-6 flex flex-col items-center justify-center text-center">
               <Badge variant="secondary" className="mb-6">
                 Industry Leader Since 1974
               </Badge>
