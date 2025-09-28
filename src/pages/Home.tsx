@@ -349,8 +349,15 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-20" id="about">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="py-20 relative" id="about">
+        {/* Background image and overlay for About section */}
+        <img
+          src="https://harmless-tapir-303.convex.cloud/api/storage/d87531ca-15d2-4d39-b73b-99da2e832b79"
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover opacity-10 select-none pointer-events-none"
+        />
+        <div className="absolute inset-0 bg-background/40" />
+        <div className="relative z-10 max-w-7xl mx-auto px-8">
           <div className="grid lg:grid-cols-3 gap-16">
             <motion.div
               initial={{ y: 20, opacity: 0 }}
