@@ -201,54 +201,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-8">
-          <h2 className="text-3xl font-bold tracking-tight mb-10 text-center">Our Brands</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card className="border-0 h-full">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <Factory className="h-6 w-6 text-primary" />
-                  <h3 className="font-bold">SAMIE – Heavy Industrial Equipment</h3>
-                </div>
-                <ul className="text-sm text-muted-foreground space-y-2 list-disc pl-5">
-                  <li>Cone crushers, high-pressure grinding rolls (HPGR)</li>
-                  <li>Liner handlers, journal bearings</li>
-                  <li>Complete production line solutions</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 h-full">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <Wrench className="h-6 w-6 text-primary" />
-                  <h3 className="font-bold">POWERMAN – High-Pressure Hydraulic Tools</h3>
-                </div>
-                <ul className="text-sm text-muted-foreground space-y-2 list-disc pl-5">
-                  <li>Cylinders, pumps, torque wrenches</li>
-                  <li>Crimping and cutting heads</li>
-                  <li>Full range of hydraulic accessories rated up to 700 bar</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 h-full">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <Plug className="h-6 w-6 text-primary" />
-                  <h3 className="font-bold">SAMEE – Electrical Equipment</h3>
-                </div>
-                <ul className="text-sm text-muted-foreground space-y-2 list-disc pl-5">
-                  <li>Industrial plugs and sockets</li>
-                  <li>Cable festoon systems</li>
-                  <li>Sirens designed for safe, durable, efficient operation</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Values */}
       <section className="py-20 bg-muted/80">
