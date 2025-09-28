@@ -98,7 +98,7 @@ export default function Home() {
             <img
               src="https://harmless-tapir-303.convex.cloud/api/storage/2bbcab05-180d-460f-b184-519c9f98ac09"
               alt=""
-              className="absolute inset-0 h-full w-full object-cover opacity-10 select-none pointer-events-none"
+              className="absolute inset-0 h-full w-full object-cover opacity-30 select-none pointer-events-none"
             />
             <div className="relative z-10 px-6 flex flex-col items-center justify-center text-center">
               <Badge variant="secondary" className="mb-6">
