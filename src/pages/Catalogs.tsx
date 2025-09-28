@@ -49,6 +49,7 @@ export default function Catalogs() {
             <a href="/" className="text-muted-foreground hover:text-foreground transition-colors">Home</a>
             <a href="/about" className="text-muted-foreground hover:text-foreground transition-colors">About Us</a>
             <a href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact Us</a>
+            <a href="/catalogs" className="text-foreground font-medium">Catalogs</a>
             <Button onClick={() => navigate("/contact")} className="ml-2">
               Get Started
             </Button>
