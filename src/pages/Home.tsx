@@ -245,49 +245,38 @@ export default function Home() {
       {/* Our Brands Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-8">
-          <h2 className="text-3xl font-bold tracking-tight mb-10 text-center">Our Brands</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card className="border-0 h-full">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <Factory className="h-6 w-6 text-primary" />
-                  <h3 className="font-bold">SAMIE – Heavy Industrial Equipment</h3>
-                </div>
-                <ul className="text-sm text-muted-foreground space-y-2 list-disc pl-5">
-                  <li>Cone crushers, high-pressure grinding rolls (HPGR)</li>
-                  <li>Liner handlers, journal bearings</li>
-                  <li>Complete production line solutions</li>
-                </ul>
-              </CardContent>
-            </Card>
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold tracking-tight mb-4">
+              Why Choose Sanat Mansoor
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              With over 75 years of family-owned expertise, we craft solutions that thrive in the toughest industries.
+            </p>
+          </motion.div>
 
-            <Card className="border-0 h-full">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <Wrench className="h-6 w-6 text-primary" />
-                  <h3 className="font-bold">POWERMAN – High-Pressure Hydraulic Tools</h3>
-                </div>
-                <ul className="text-sm text-muted-foreground space-y-2 list-disc pl-5">
-                  <li>Cylinders, pumps, torque wrenches</li>
-                  <li>Crimping and cutting heads</li>
-                  <li>Full range of hydraulic accessories rated up to 700 bar</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 h-full">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <Plug className="h-6 w-6 text-primary" />
-                  <h3 className="font-bold">SAMEE – Electrical Equipment</h3>
-                </div>
-                <ul className="text-sm text-muted-foreground space-y-2 list-disc pl-5">
-                  <li>Industrial plugs and sockets</li>
-                  <li>Cable festoon systems</li>
-                  <li>Sirens designed for safe, durable, efficient operation</li>
-                </ul>
-              </CardContent>
-            </Card>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {features.map((feature, index) => (
+              <motion.div
+                key={feature.title}
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
+                  <CardContent className="p-8">
+                    <feature.icon className="h-14 w-14 text-primary mb-6 mx-auto" />
+                    <h3 className="text-xl font-bold mb-4 text-center">{feature.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed text-center">
+                      {feature.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
