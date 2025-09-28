@@ -81,7 +81,7 @@ export default function Home() {
     { title: "Casting", description: "Advanced foundry operations for critical industrial components." },
     { title: "Welding & Fabrication", description: "Certified processes for durable assemblies." },
     { title: "Reverse Engineering", description: "Extending the life of equipment through innovation." },
-    { title: "After-Sales Service", description: "Spare parts, maintenance, and long-term support." },
+    // { title: "After-Sales Service", description: "Spare parts, maintenance, and long-term support." },
   ];
 
   return (
@@ -272,7 +272,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section moved here */}
+      {/* Services Section moved here ----------------------------------------------------------------------------------*/}
       <section className="py-20 bg-muted/80">
         <div className="max-w-7xl mx-auto px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -323,7 +323,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose Sanat Mansoor (duplicate) */}
+
+      {/* Why Choose Sanat Mansoor (duplicate) ----------------------------------------------------------------------------*/}
       <section className="py-20" id="about">
         <div className="max-w-7xl mx-auto px-8">
           <motion.div
@@ -362,7 +363,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Our Capabilities Section --------------------------------------------------------------------------------------*/}
+
+
+
+      {/* Stats Section -------------------------------------------------------------------------------------*/}
+      <section className="py-1 bg-muted/80">
+          
+            
+
+            {/* Our Capabilities Section --------------------------------------------------------------------------------------*/}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-8">
           <motion.div
@@ -397,6 +406,15 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+
+
+        
+      </section>
+
+
+
+      
 
 
       {/* About Section -----------------------------------------------------------------------------------------------*/}
