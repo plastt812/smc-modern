@@ -385,8 +385,15 @@ export default function Home() {
             
 
             {/* Our Capabilities Section --------------------------------------------------------------------------------------*/}
-      <section className="py-20" id="capabilities">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="py-20 relative" id="capabilities">
+        {/* Background image and subtle overlay */}
+        <img
+          src="https://harmless-tapir-303.convex.cloud/api/storage/3caba74a-7f4f-40e6-b9e5-2279ece145d2"
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover opacity-10 select-none pointer-events-none"
+        />
+        <div className="absolute inset-0 bg-background/40" />
+        <div className="relative z-10 max-w-7xl mx-auto px-8">
           <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
