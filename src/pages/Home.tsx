@@ -75,6 +75,15 @@ export default function Home() {
     },
   ];
 
+  // Add capabilities list
+  const capabilities = [
+    { title: "Machining", description: "Precision and large-scale capabilities for complex parts." },
+    { title: "Casting", description: "Advanced foundry operations for critical industrial components." },
+    { title: "Welding & Fabrication", description: "Certified processes for durable assemblies." },
+    { title: "Reverse Engineering", description: "Extending the life of equipment through innovation." },
+    { title: "After-Sales Service", description: "Spare parts, maintenance, and long-term support." },
+  ];
+
   return (
     <div className="min-h-screen">
       {/* Navigation */}
@@ -350,7 +359,41 @@ export default function Home() {
       </section>
 
 
-      
+      {/* Our Capabilities Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-8">
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            className="mb-8 text-center"
+          >
+            <h2 className="text-4xl font-bold tracking-tight mb-4">
+              Our Capabilities
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              From concept to commissioning, Sanat Mansoor delivers solutions built on engineering excellence:
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            {capabilities.map((c, i) => (
+              <motion.div
+                key={c.title}
+                initial={{ y: 16, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: i * 0.06 }}
+                className="flex items-start gap-3"
+              >
+                <CheckCircle className="h-5 w-5 text-primary mt-1 shrink-0" />
+                <p className="text-base">
+                  <span className="font-semibold">{c.title}</span>
+                  <span className="text-muted-foreground"> — {c.description}</span>
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* About Section */}
       <section className="py-20 relative" id="about">
