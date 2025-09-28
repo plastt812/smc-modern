@@ -179,7 +179,12 @@ export default function Home() {
             >
               <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <Factory className="h-12 w-12 text-primary mb-4 mx-auto" />
+                  <img
+                    src="https://harmless-tapir-303.convex.cloud/api/storage/d594d23c-0646-471d-86a0-3007674d3957"
+                    alt="SAMIE logo"
+                    className="h-12 w-auto mb-4 mx-auto object-contain"
+                    loading="lazy"
+                  />
                   <h3 className="text-xl font-bold mb-2 text-center">SAMIE — Heavy Industrial Equipment</h3>
                   <ul className="text-muted-foreground space-y-2 text-sm leading-relaxed">
                     <li>• Cone crushers, HPGR, liner handlers</li>
@@ -197,7 +202,12 @@ export default function Home() {
             >
               <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <Wrench className="h-12 w-12 text-primary mb-4 mx-auto" />
+                  <img
+                    src="https://harmless-tapir-303.convex.cloud/api/storage/e7220248-19c5-4689-8607-7b0341910b7e"
+                    alt="POWERMAN logo"
+                    className="h-12 w-auto mb-4 mx-auto object-contain"
+                    loading="lazy"
+                  />
                   <h3 className="text-xl font-bold mb-2 text-center">POWERMAN — High‑Pressure Hydraulic Tools</h3>
                   <ul className="text-muted-foreground space-y-2 text-sm leading-relaxed">
                     <li>• Cylinders, pumps, torque wrenches</li>
@@ -215,7 +225,12 @@ export default function Home() {
             >
               <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <Plug className="h-12 w-12 text-primary mb-4 mx-auto" />
+                  <img
+                    src="https://harmless-tapir-303.convex.cloud/api/storage/3a72f77b-550f-4ecc-a660-ecb8d3851593"
+                    alt="SAMEE logo"
+                    className="h-12 w-auto mb-4 mx-auto object-contain"
+                    loading="lazy"
+                  />
                   <h3 className="text-xl font-bold mb-2 text-center">SAMEE — Electrical Equipment</h3>
                   <ul className="text-muted-foreground space-y-2 text-sm leading-relaxed">
                     <li>• Industrial plugs & sockets</li>
