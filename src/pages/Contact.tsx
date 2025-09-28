@@ -42,6 +42,7 @@ export default function Contact() {
               <a href="/" className="text-muted-foreground hover:text-foreground transition-colors">Home</a>
               <a href="/about" className="text-muted-foreground hover:text-foreground transition-colors">About Us</a>
               <a href="/contact" className="text-foreground font-medium">Contact Us</a>
+              <a href="/catalogs" className="text-muted-foreground hover:text-foreground transition-colors">Catalogs</a>
               <Button onClick={() => navigate("/")} className="ml-2">
                 Get Started
               </Button>
