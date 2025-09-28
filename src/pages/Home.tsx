@@ -95,7 +95,7 @@ export default function Home() {
             <div className="hidden md:flex items-center space-x-8">
               <a href="#services" className="text-muted-foreground hover:text-foreground transition-colors">Services</a>
               <a href="/about" className="text-muted-foreground hover:text-foreground transition-colors">About Us</a>
-              <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+              <a href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
               <Button 
                 onClick={() => navigate(isAuthenticated ? "/dashboard" : "/auth")}
                 className="ml-4"

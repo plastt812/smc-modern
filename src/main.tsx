@@ -5,6 +5,7 @@ import AuthPage from "@/pages/Auth.tsx";
 import Home from "@/pages/Home.tsx";
 import Dashboard from "@/pages/Dashboard.tsx";
 import About from "@/pages/About.tsx";
+import Contact from "@/pages/Contact.tsx";
 import { ConvexAuthProvider } from "@convex-dev/auth/react";
 import { ConvexReactClient } from "convex/react";
 import { StrictMode, useEffect } from "react";
@@ -52,6 +53,7 @@ createRoot(document.getElementById("root")!).render(
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/auth" element={<AuthPage redirectAfterAuth="/dashboard" />} />
             <Route path="*" element={<NotFound />} />
