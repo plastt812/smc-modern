@@ -154,7 +154,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Features Section (moved: now Our Brands) */}
       <section className="py-20" id="services">
         <div className="max-w-7xl mx-auto px-8">
           <motion.div
@@ -163,32 +163,68 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold tracking-tight mb-4">
-              Why Choose Sanat Mansoor
+              Our Brands
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              With over 75 years of family-owned expertise, we craft solutions that thrive in the toughest industries.
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Three specialized brands deliver end‑to‑end industrial solutions across heavy equipment,
+              high‑pressure hydraulics, and electrical systems.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
-              <motion.div
-                key={feature.title}
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
-                  <CardContent className="p-8">
-                    <feature.icon className="h-14 w-14 text-primary mb-6 mx-auto" />
-                    <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {feature.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.05 }}
+            >
+              <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardContent className="p-8">
+                  <Factory className="h-12 w-12 text-primary mb-4 mx-auto" />
+                  <h3 className="text-xl font-bold mb-2 text-center">SAMIE — Heavy Industrial Equipment</h3>
+                  <ul className="text-muted-foreground space-y-2 text-sm leading-relaxed">
+                    <li>• Cone crushers, HPGR, liner handlers</li>
+                    <li>• Journal bearings</li>
+                    <li>• Complete production line solutions</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
+              <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardContent className="p-8">
+                  <Wrench className="h-12 w-12 text-primary mb-4 mx-auto" />
+                  <h3 className="text-xl font-bold mb-2 text-center">POWERMAN — High‑Pressure Hydraulic Tools</h3>
+                  <ul className="text-muted-foreground space-y-2 text-sm leading-relaxed">
+                    <li>• Cylinders, pumps, torque wrenches</li>
+                    <li>• Crimping & cutting heads</li>
+                    <li>• Accessories rated up to 700 bar</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.15 }}
+            >
+              <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardContent className="p-8">
+                  <Plug className="h-12 w-12 text-primary mb-4 mx-auto" />
+                  <h3 className="text-xl font-bold mb-2 text-center">SAMEE — Electrical Equipment</h3>
+                  <ul className="text-muted-foreground space-y-2 text-sm leading-relaxed">
+                    <li>• Industrial plugs & sockets</li>
+                    <li>• Cable festoon systems</li>
+                    <li>• Sirens for safe and durable operation</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -242,8 +278,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Our Brands Section */}
-      <section className="py-20">
+      {/* Why Choose Sanat Mansoor (duplicate) */}
+      <section className="py-20" id="about">
         <div className="max-w-7xl mx-auto px-8">
           <motion.div
             initial={{ y: 20, opacity: 0 }}
@@ -269,8 +305,8 @@ export default function Home() {
                 <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
                   <CardContent className="p-8">
                     <feature.icon className="h-14 w-14 text-primary mb-6 mx-auto" />
-                    <h3 className="text-xl font-bold mb-4 text-center">{feature.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed text-center">
+                    <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">
                       {feature.description}
                     </p>
                   </CardContent>
