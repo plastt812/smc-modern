@@ -352,7 +352,7 @@ export default function Home() {
       <section className="py-20 relative" id="about">
         {/* Background image and overlay for About section */}
         <img
-          src="https://harmless-tapir-303.convex.cloud/api/storage/d87531ca-15d2-4d39-b73b-99da2e832b79"
+          src="https://harmless-tapir-303.convex.cloud/api/storage/d66d8df0-b231-4b1c-95ec-757124e24d81"
           alt=""
           className="absolute inset-0 h-full w-full object-cover opacity-10 select-none pointer-events-none"
         />
@@ -369,7 +369,7 @@ export default function Home() {
               </h2>
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  For over five decades, IndustrialCorp has been at the forefront of manufacturing excellence. 
+                  For over five decades, Sanat Mansoor has been at the forefront of manufacturing excellence. 
                   We combine traditional craftsmanship with cutting-edge technology to deliver solutions that 
                   exceed expectations.
                 </p>
@@ -441,7 +441,7 @@ export default function Home() {
               <CardContent className="p-8 text-center">
                 <Mail className="h-8 w-8 text-primary mx-auto mb-4" />
                 <h3 className="font-bold mb-2">Email Us</h3>
-                <p className="text-muted-foreground">info@industrialcorp.com</p>
+                <p className="text-muted-foreground">info@sanatmansoor.com</p>
               </CardContent>
             </Card>
             
