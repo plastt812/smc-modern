@@ -206,7 +206,7 @@ export default function Contact() {
               <img src="https://harmless-tapir-303.convex.cloud/api/storage/dc635b40-fb4a-48bf-bbfe-9fb32de3c6b3" alt="Logo" className="h-8 w-8" />
               <span className="text-xl font-bold tracking-tight">Sanat Mansoor</span>
             </div>
-            <p className="text-muted-foreground">© 2024 Sanat Mansoor. All rights reserved.</p>
+            <p className="text-muted-foreground">© 2025 Sanat Mansoor. All rights reserved.</p>
           </div>
         </div>
       </footer>

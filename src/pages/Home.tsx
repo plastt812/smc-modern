@@ -571,7 +571,7 @@ export default function Home() {
               <span className="text-xl font-bold tracking-tight">Sanat Mansoor</span>
             </div>
             <p className="text-muted-foreground">
-              © 2024 Sanat Mansoor. All rights reserved.
+              © 2025 Sanat Mansoor. All rights reserved.
             </p>
           </div>
         </div>
