@@ -12,6 +12,12 @@ import {
   Clock,
   Rocket,
   ArrowRight,
+  Wrench,
+  Cog,
+  Plug,
+  Hammer,
+  Gauge,
+  CheckCircle,
 } from "lucide-react";
 
 export default function About() {
@@ -136,6 +142,111 @@ export default function About() {
               </CardContent>
             </Card>
           </motion.div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-3 gap-12 items-start">
+          <div className="lg:col-span-2">
+            <h2 className="text-3xl font-bold tracking-tight mb-6">About Sanat Mansoor</h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Founded in 1948 as a family-owned company, Sanat Mansoor has grown into a recognized leader in
+              industrial engineering and manufacturing. With more than 1,000 projects successfully completed,
+              we combine decades of expertise with advanced technology to meet the toughest challenges.
+            </p>
+          </div>
+          <Card className="border-0">
+            <CardContent className="p-6 space-y-3">
+              <div className="flex items-center gap-3">
+                <Gauge className="h-6 w-6 text-primary" />
+                <p className="text-sm text-muted-foreground">Since 1948 · 1,000+ projects</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <Cog className="h-6 w-6 text-primary" />
+                <p className="text-sm text-muted-foreground">Integrated engineering and manufacturing</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      <section className="py-20 bg-muted/80">
+        <div className="max-w-7xl mx-auto px-8">
+          <h2 className="text-3xl font-bold tracking-tight mb-6">Integrated Capabilities</h2>
+          <p className="text-lg text-muted-foreground mb-8">
+            Our strength lies in the ability to integrate multiple disciplines under one roof:
+          </p>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="flex items-start gap-3">
+              <CheckCircle className="h-5 w-5 text-primary mt-1" />
+              <span>Hydraulic system design and engineering</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <CheckCircle className="h-5 w-5 text-primary mt-1" />
+              <span>Precision and large-piece machining</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <CheckCircle className="h-5 w-5 text-primary mt-1" />
+              <span>Advanced casting through our Felez Taban foundry</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <CheckCircle className="h-5 w-5 text-primary mt-1" />
+              <span>Certified welding and fabrication</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <CheckCircle className="h-5 w-5 text-primary mt-1" />
+              <span>Reverse engineering and spare parts supply</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-8">
+          <h2 className="text-3xl font-bold tracking-tight mb-10 text-center">Our Brands</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="border-0 h-full">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <Factory className="h-6 w-6 text-primary" />
+                  <h3 className="font-bold">SAMIE – Heavy Industrial Equipment</h3>
+                </div>
+                <ul className="text-sm text-muted-foreground space-y-2 list-disc pl-5">
+                  <li>Cone crushers, high-pressure grinding rolls (HPGR)</li>
+                  <li>Liner handlers, journal bearings</li>
+                  <li>Complete production line solutions</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 h-full">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <Wrench className="h-6 w-6 text-primary" />
+                  <h3 className="font-bold">POWERMAN – High-Pressure Hydraulic Tools</h3>
+                </div>
+                <ul className="text-sm text-muted-foreground space-y-2 list-disc pl-5">
+                  <li>Cylinders, pumps, torque wrenches</li>
+                  <li>Crimping and cutting heads</li>
+                  <li>Full range of hydraulic accessories rated up to 700 bar</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 h-full">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <Plug className="h-6 w-6 text-primary" />
+                  <h3 className="font-bold">SAMEE – Electrical Equipment</h3>
+                </div>
+                <ul className="text-sm text-muted-foreground space-y-2 list-disc pl-5">
+                  <li>Industrial plugs and sockets</li>
+                  <li>Cable festoon systems</li>
+                  <li>Sirens designed for safe, durable, efficient operation</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
