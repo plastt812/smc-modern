@@ -258,48 +258,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Industries section moved below "Why Choose Sanat Mansoor" */}
-
-      {/* Why Choose Sanat Mansoor (duplicate) */}
-      <section className="py-20" id="about">
-        <div className="max-w-7xl mx-auto px-8">
-          <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl font-bold tracking-tight mb-4">
-              Why Choose Sanat Mansoor
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              With over 75 years of family-owned expertise, we craft solutions that thrive in the toughest industries.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
-              <motion.div
-                key={feature.title}
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
-                  <CardContent className="p-8">
-                    <feature.icon className="h-14 w-14 text-primary mb-6 mx-auto" />
-                    <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {feature.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section — moved here below "Why Choose Sanat Mansoor" */}
+      {/* Services Section */}
       <section className="py-20 bg-muted/80">
         <div className="max-w-7xl mx-auto px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -346,6 +305,45 @@ export default function Home() {
                 />
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Sanat Mansoor (duplicate) */}
+      <section className="py-20" id="about">
+        <div className="max-w-7xl mx-auto px-8">
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold tracking-tight mb-4">
+              Why Choose Sanat Mansoor
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              With over 75 years of family-owned expertise, we craft solutions that thrive in the toughest industries.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {features.map((feature, index) => (
+              <motion.div
+                key={feature.title}
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
+                  <CardContent className="p-8">
+                    <feature.icon className="h-14 w-14 text-primary mb-6 mx-auto" />
+                    <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {feature.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
