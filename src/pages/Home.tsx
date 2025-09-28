@@ -15,7 +15,8 @@ import {
   CheckCircle,
   Phone,
   Mail,
-  MapPin
+  MapPin,
+  Wrench
 } from "lucide-react";
 
 export default function Home() {
@@ -24,24 +25,24 @@ export default function Home() {
 
   const features = [
     {
-      icon: Factory,
-      title: "Advanced Manufacturing",
-      description: "State-of-the-art production facilities with cutting-edge technology and precision engineering."
+      icon: Shield,
+      title: "Unrivaled Durability",
+      description: "High-performance tools (up to 1,500 bar) and resilient electrical systems, engineered for safety and long-term reliability in harsh environments."
     },
     {
-      icon: Shield,
-      title: "Quality Assurance",
-      description: "ISO 9001 certified processes ensuring the highest standards in every product we deliver."
+      icon: Wrench,
+      title: "Customized Precision",
+      description: "Tailored designs from SAMIE's machinery to SAMEE's cable systems, optimized for steel, mining, and energy challenges with unmatched adaptability."
     },
     {
       icon: Zap,
-      title: "Innovation Focus",
-      description: "Continuous R&D investment driving breakthrough solutions for industrial challenges."
+      title: "Proven Innovation",
+      description: "Over 1,000 pioneering projects, including first-of-their-kind solutions for global leaders, showcasing our commitment to cutting-edge excellence."
     },
     {
-      icon: Globe,
-      title: "Global Reach",
-      description: "Serving clients worldwide with localized support and international shipping capabilities."
+      icon: Users,
+      title: "Expert Partnership",
+      description: "A team of 200+ specialists and strategic alliances, like the Esfarayen Industrial Complex, delivering integrated support for your unique industrial needs."
     }
   ];
 
@@ -164,7 +165,7 @@ export default function Home() {
               Why Choose Sanat Mansoor
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Decades of expertise combined with innovative technology to deliver exceptional results
+              With over 75 years of family-owned expertise, we craft solutions that thrive in the toughest industries.
             </p>
           </motion.div>
 
