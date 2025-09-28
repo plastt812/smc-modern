@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, FileText, ArrowLeft } from "lucide-react";
+import { Download, FileText } from "lucide-react";
 
 type Catalog = {
   title: string;
@@ -45,12 +45,10 @@ export default function Catalogs() {
             <img src="./logo.svg" alt="Logo" className="h-8 w-8" />
             <span className="text-xl font-bold tracking-tight">Sanat Mansoor</span>
           </div>
-          <div className="hidden md:flex items-center gap-3">
-            <Button variant="outline" onClick={() => navigate(-1)}>
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              Back
-            </Button>
-            <Button onClick={() => navigate("/contact")}>Contact Us</Button>
+          <div className="hidden md:flex items-center gap-6">
+            <a href="/" className="text-muted-foreground hover:text-foreground transition-colors">Home</a>
+            <a href="/about" className="text-muted-foreground hover:text-foreground transition-colors">About Us</a>
+            <a href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact Us</a>
           </div>
         </div>
       </motion.nav>
