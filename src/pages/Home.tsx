@@ -16,7 +16,8 @@ import {
   Mail,
   MapPin,
   Wrench,
-  Plug
+  Plug,
+  FileText
 } from "lucide-react";
 
 export default function Home() {
@@ -103,6 +104,7 @@ export default function Home() {
               <a href="#services" className="text-muted-foreground hover:text-foreground transition-colors">Brands</a>
               <a href="/about" className="text-muted-foreground hover:text-foreground transition-colors">About Us</a>
               <a href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact Us</a>
+              <a href="/catalogs" className="text-muted-foreground hover:text-foreground transition-colors">Catalogs</a>
               <Button 
                 onClick={() => navigate("/contact")}
                 className="ml-4"
@@ -464,10 +466,10 @@ export default function Home() {
             >
               <Card className="border-0 shadow-sm">
                 <CardContent className="p-8">
-                  <Users className="h-12 w-12 text-primary mb-6" />
-                  <h3 className="text-xl font-bold mb-4">Our Team</h3>
+                  <FileText className="h-12 w-12 text-primary mb-6" />
+                  <h3 className="text-xl font-bold mb-4">Catalogs & Downloads</h3>
                   <p className="text-muted-foreground mb-6">
-                    Over 2,000 skilled professionals dedicated to delivering excellence in every project.
+                    Explore our latest catalogs to learn more about our products and services.
                   </p>
                   <Button variant="outline" className="w-full" onClick={() => navigate("/catalogs")}>
                     View Catalogs
