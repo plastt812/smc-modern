@@ -17,7 +17,7 @@ export default function Contact() {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
     toast("Message sent", {
-      description: `Thanks ${data.get("name") || "there"} — we’ll get back to you shortly.`,
+      description: `Thanks ${data.get("name") || "there"} — we'll get back to you shortly.`,
     });
     (e.currentTarget as HTMLFormElement).reset();
   };
@@ -63,7 +63,7 @@ export default function Contact() {
           <div className="relative z-10 px-6 text-center">
             <Badge variant="secondary" className="mb-4">Contact Us</Badge>
             <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-              Let’s build something that lasts
+              Let's build something that lasts
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Reach out to discuss your project, request a quote, or learn more about our capabilities.
@@ -74,6 +74,23 @@ export default function Contact() {
 
       {/* Content */}
       <section className="py-16">
+        <div className="max-w-7xl mx-auto px-8 mb-8">
+          <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">
+              Get in Touch with Sanat Mansoor
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              For over 50 years, Sanat Mansoor (SMC) has been a trusted partner in industrial manufacturing,
+              delivering precision-engineered machinery, hydraulic systems, and electrical equipment. Whether you
+              have a question about a specific product, need a custom solution, or want to discuss a project, our
+              team of experts is here to help. Reach out to us using the information below.
+            </p>
+            <h3 className="text-xl font-semibold mt-6">Contact Information by Department</h3>
+            <p className="text-muted-foreground">
+              To ensure your inquiry is handled efficiently, please get in touch with the relevant department.
+            </p>
+          </motion.div>
+        </div>
         <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-3 gap-10">
           <motion.div
             initial={{ y: 20, opacity: 0 }}
