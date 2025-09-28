@@ -55,10 +55,26 @@ export default function Home() {
   ];
 
   const services = [
-    "🏭 Steel Production – Bearings, rollers, crushers, and complete line equipment.",
-    "🛢️ Mining – Crushers, HPGR systems, and hydraulic tools for extreme conditions.",
-    "⛏️ Oil & Gas – High-pressure hydraulic and electrical solutions for safety-critical operations.",
-    "⚡ Power Generation – Components and systems that keep power plants running.",
+    {
+      emoji: "🏭",
+      title: "Steel Production",
+      description: "Bearings, rollers, crushers, and complete line equipment.",
+    },
+    {
+      emoji: "🛢️",
+      title: "Mining",
+      description: "Crushers, HPGR systems, and hydraulic tools for extreme conditions.",
+    },
+    {
+      emoji: "⛏️",
+      title: "Oil & Gas",
+      description: "High-pressure hydraulic and electrical solutions for safety-critical operations.",
+    },
+    {
+      emoji: "⚡",
+      title: "Power Generation",
+      description: "Components and systems that keep power plants running.",
+    },
   ];
 
   return (
@@ -259,13 +275,17 @@ export default function Home() {
               <div className="space-y-4">
                 {services.map((service, index) => (
                   <motion.div
-                    key={service}
+                    key={service.title}
                     initial={{ x: -20, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ delay: index * 0.1 }}
-                    className="flex items-center space-x-3"
+                    className="flex items-start space-x-3"
                   >
-                    <span className="text-lg">{service}</span>
+                    <span className="text-xl leading-6">{service.emoji}</span>
+                    <p className="text-lg leading-6">
+                      <span className="font-semibold">{service.title}</span>{" "}
+                      — <span className="text-muted-foreground">{service.description}</span>
+                    </p>
                   </motion.div>
                 ))}
               </div>
