@@ -164,7 +164,7 @@ export default function Contact() {
                   <div>
                     <div className="font-semibold">Address</div>
                     <div className="text-muted-foreground">
-                      123 Industrial Blvd, Manufacturing City
+                      #78, 9th Street, Oshtorjan Industrial City, Isfahan Province, Iran
                     </div>
                   </div>
                 </div>
