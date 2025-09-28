@@ -352,7 +352,7 @@ export default function Home() {
       <section className="py-20 relative" id="about">
         {/* Background image and overlay for About section */}
         <img
-          src="https://harmless-tapir-303.convex.cloud/api/storage/d66d8df0-b231-4b1c-95ec-757124e24d81"
+          src="https://harmless-tapir-303.convex.cloud/api/storage/c801284e-0bf5-4f1e-bcb6-6e11ecef4a99"
           alt=""
           className="absolute inset-0 h-full w-full object-cover opacity-10 select-none pointer-events-none"
         />
