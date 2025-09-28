@@ -7,12 +7,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
-import { useAuth } from "@/hooks/use-auth";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export default function Contact() {
   const navigate = useNavigate();
-  const { isAuthenticated } = useAuth();
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -44,8 +42,8 @@ export default function Contact() {
               <a href="/" className="text-muted-foreground hover:text-foreground transition-colors">Home</a>
               <a href="/about" className="text-muted-foreground hover:text-foreground transition-colors">About</a>
               <a href="/contact" className="text-foreground font-medium">Contact</a>
-              <Button onClick={() => navigate(isAuthenticated ? "/dashboard" : "/auth")} className="ml-2">
-                {isAuthenticated ? "Dashboard" : "Get Started"}
+              <Button onClick={() => navigate("/")} className="ml-2">
+                Get Started
               </Button>
             </div>
           </div>

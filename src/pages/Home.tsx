@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { useAuth } from "@/hooks/use-auth";
 import { useNavigate } from "react-router";
 import { 
   Factory, 
@@ -21,7 +20,6 @@ import {
 } from "lucide-react";
 
 export default function Home() {
-  const { isAuthenticated } = useAuth();
   const navigate = useNavigate();
 
   const features = [
@@ -97,10 +95,10 @@ export default function Home() {
               <a href="/about" className="text-muted-foreground hover:text-foreground transition-colors">About Us</a>
               <a href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
               <Button 
-                onClick={() => navigate(isAuthenticated ? "/dashboard" : "/auth")}
+                onClick={() => navigate("/contact")}
                 className="ml-4"
               >
-                {isAuthenticated ? "Dashboard" : "Get Started"}
+                Get Started
               </Button>
             </div>
           </div>
@@ -129,10 +127,10 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
-                  onClick={() => navigate(isAuthenticated ? "/dashboard" : "/auth")}
+                  onClick={() => navigate("/contact")}
                   className="text-lg px-8 py-6"
                 >
-                  {isAuthenticated ? "View Dashboard" : "Start Your Project"}
+                  Start Your Project
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 <Button variant="outline" size="lg" className="text-lg px-8 py-6">
@@ -463,10 +461,10 @@ export default function Home() {
           <div className="text-center">
             <Button 
               size="lg" 
-              onClick={() => navigate(isAuthenticated ? "/dashboard" : "/auth")}
+              onClick={() => navigate("/contact")}
               className="text-lg px-8 py-6"
             >
-              {isAuthenticated ? "Access Dashboard" : "Get Started Today"}
+              Get Started Today
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>

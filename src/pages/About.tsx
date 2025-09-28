@@ -57,7 +57,7 @@ export default function About() {
               <a href="/about" className="text-foreground font-medium">About Us</a>
               <a href="/#services" className="text-muted-foreground hover:text-foreground transition-colors">Services</a>
               <a href="/#contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
-              <Button onClick={() => navigate("/auth")} className="ml-2">
+              <Button onClick={() => navigate("/contact")} className="ml-2">
                 Get Started
               </Button>
             </div>
@@ -251,7 +251,7 @@ export default function About() {
           </div>
 
           <div className="text-center mt-12">
-            <Button size="lg" onClick={() => navigate("/auth")} className="text-lg px-8 py-6">
+            <Button size="lg" onClick={() => navigate("/contact")} className="text-lg px-8 py-6">
               Partner With Us <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
