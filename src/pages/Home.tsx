@@ -178,7 +178,7 @@ export default function Home() {
               >
                 <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
                   <CardContent className="p-8">
-                    <feature.icon className="h-12 w-12 text-primary mb-6 mx-auto" />
+                    <feature.icon className="h-14 w-14 text-primary mb-6 mx-auto" />
                     <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">
                       {feature.description}
