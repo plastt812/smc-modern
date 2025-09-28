@@ -180,7 +180,7 @@ export default function Home() {
               <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
                   <img
-                    src="https://harmless-tapir-303.convex.cloud/api/storage/d594d23c-0646-471d-86a0-3007674d3957"
+                    src="https://harmless-tapir-303.convex.cloud/api/storage/e7220248-19c5-4689-8607-7b0341910b7e"
                     alt="SAMIE logo"
                     className="h-12 w-auto mb-4 mx-auto object-contain"
                     loading="lazy"
