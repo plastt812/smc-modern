@@ -365,7 +365,7 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
-                  <CardContent className="p-8">
+                  <CardContent className="p-8 text-center">
                     <feature.icon className="h-14 w-14 text-primary mb-6 mx-auto" />
                     <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">
