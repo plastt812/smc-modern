@@ -47,7 +47,7 @@ export default function Home() {
 
   const stats = [
     { number: "50+", label: "Years Experience" },
-    { number: "10K+", label: "Products Delivered" },
+    { number: "1000+", label: "Projects" },
     { number: "500+", label: "Global Clients" },
     { number: "99.9%", label: "Quality Rating" }
   ];
