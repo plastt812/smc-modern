@@ -55,8 +55,8 @@ export default function About() {
             <div className="hidden md:flex items-center space-x-8">
               <a href="/" className="text-muted-foreground hover:text-foreground transition-colors">Home</a>
               <a href="/about" className="text-foreground font-medium">About Us</a>
+              <a href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact Us</a>
               <a href="/catalogs" className="text-muted-foreground hover:text-foreground transition-colors">Catalogs</a>
-              <a href="/#contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
               <Button onClick={() => navigate("/contact")} className="ml-2">
                 Get Started
               </Button>
