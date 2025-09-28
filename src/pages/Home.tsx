@@ -258,7 +258,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Services Section moved here */}
       <section className="py-20 bg-muted/80">
         <div className="max-w-7xl mx-auto px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
