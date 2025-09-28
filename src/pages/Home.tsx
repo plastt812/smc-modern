@@ -265,7 +265,6 @@ export default function Home() {
                     transition={{ delay: index * 0.1 }}
                     className="flex items-center space-x-3"
                   >
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
                     <span className="text-lg">{service}</span>
                   </motion.div>
                 ))}
