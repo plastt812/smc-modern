@@ -188,7 +188,7 @@ export default function Contact() {
             <AspectRatio ratio={16 / 9}>
               <iframe
                 title="Sanat Mansoor Location"
-                src="https://www.google.com/maps?q=Isfahan%20Province%2C%20Iran&output=embed"
+                src="https://www.google.com/maps?q=Sanat%20Mansoor%20Co.%2C%20Isfahan%20Province%2C%20Industrial%20Park%2C%209th%20Street%2C%20No.%20%2378%2C%20Iran&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
