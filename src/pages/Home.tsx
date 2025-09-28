@@ -422,7 +422,7 @@ export default function Home() {
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Card className="border-0 shadow-sm">
+            <Card className="border border-white/20 bg-background/40 backdrop-blur-md">
               <CardContent className="p-8 text-center">
                 <Phone className="h-8 w-8 text-primary mx-auto mb-4" />
                 <h3 className="font-bold mb-2">Call Us</h3>
@@ -430,7 +430,7 @@ export default function Home() {
               </CardContent>
             </Card>
             
-            <Card className="border-0 shadow-sm">
+            <Card className="border border-white/20 bg-background/40 backdrop-blur-md">
               <CardContent className="p-8 text-center">
                 <Mail className="h-8 w-8 text-primary mx-auto mb-4" />
                 <h3 className="font-bold mb-2">Email Us</h3>
@@ -438,7 +438,7 @@ export default function Home() {
               </CardContent>
             </Card>
             
-            <Card className="border-0 shadow-sm">
+            <Card className="border border-white/20 bg-background/40 backdrop-blur-md">
               <CardContent className="p-8 text-center">
                 <MapPin className="h-8 w-8 text-primary mx-auto mb-4" />
                 <h3 className="font-bold mb-2">Visit Us</h3>
