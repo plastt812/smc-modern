@@ -469,8 +469,8 @@ export default function Home() {
                   <p className="text-muted-foreground mb-6">
                     Over 2,000 skilled professionals dedicated to delivering excellence in every project.
                   </p>
-                  <Button variant="outline" className="w-full">
-                    Meet Our Experts
+                  <Button variant="outline" className="w-full" onClick={() => navigate("/catalogs")}>
+                    View Catalogs
                   </Button>
                 </CardContent>
               </Card>

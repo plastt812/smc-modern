@@ -4,6 +4,7 @@ import { InstrumentationProvider } from "@/instrumentation.tsx";
 import Home from "@/pages/Home.tsx";
 import About from "@/pages/About.tsx";
 import Contact from "@/pages/Contact.tsx";
+import Catalogs from "@/pages/Catalogs.tsx";
 import { ConvexAuthProvider } from "@convex-dev/auth/react";
 import { ConvexReactClient } from "convex/react";
 import { StrictMode, useEffect } from "react";
@@ -52,6 +53,7 @@ createRoot(document.getElementById("root")!).render(
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/catalogs" element={<Catalogs />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
