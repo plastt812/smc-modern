@@ -161,7 +161,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold tracking-tight mb-4">
-              Why Choose IndustrialCorp
+              Why Choose Sanat Mansoor
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Decades of expertise combined with innovative technology to deliver exceptional results
@@ -355,7 +355,7 @@ export default function Home() {
               <span className="text-xl font-bold tracking-tight">Sanat Mansoor</span>
             </div>
             <p className="text-muted-foreground">
-              © 2024 IndustrialCorp. All rights reserved.
+              © 2024 Sanat Mansoor. All rights reserved.
             </p>
           </div>
         </div>
