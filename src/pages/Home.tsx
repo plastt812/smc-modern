@@ -465,8 +465,8 @@ export default function Home() {
               transition={{ delay: 0.2 }}
             >
               <Card className="border-0 shadow-sm">
-                <CardContent className="p-8">
-                  <FileText className="h-12 w-12 text-primary mb-6" />
+                <CardContent className="p-8 text-center">
+                  <FileText className="h-16 w-16 text-primary mb-6 mx-auto" />
                   <h3 className="text-xl font-bold mb-4">Catalogs & Downloads</h3>
                   <p className="text-muted-foreground mb-6">
                     Explore our latest catalogs to learn more about our products and services.
