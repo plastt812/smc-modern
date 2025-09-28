@@ -89,7 +89,7 @@ export default function Dashboard() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-3 cursor-pointer" onClick={() => navigate("/")}>
-                <img src="./logo.svg" alt="Logo" className="h-8 w-8" />
+                <img src="https://harmless-tapir-303.convex.cloud/api/storage/dc635b40-fb4a-48bf-bbfe-9fb32de3c6b3" alt="Logo" className="h-8 w-8" />
                 <span className="text-xl font-bold tracking-tight">Sanat Mansoor</span>
               </div>
               <Badge variant="secondary">Dashboard</Badge>

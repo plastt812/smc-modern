@@ -35,7 +35,7 @@ export default function Contact() {
               className="flex items-center space-x-3 cursor-pointer"
               onClick={() => navigate("/")}
             >
-              <img src="./logo.svg" alt="Logo" className="h-8 w-8" />
+              <img src="https://harmless-tapir-303.convex.cloud/api/storage/dc635b40-fb4a-48bf-bbfe-9fb32de3c6b3" alt="Logo" className="h-8 w-8" />
               <span className="text-xl font-bold tracking-tight">Sanat Mansoor</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
@@ -203,7 +203,7 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-4 md:mb-0">
-              <img src="./logo.svg" alt="Logo" className="h-8 w-8" />
+              <img src="https://harmless-tapir-303.convex.cloud/api/storage/dc635b40-fb4a-48bf-bbfe-9fb32de3c6b3" alt="Logo" className="h-8 w-8" />
               <span className="text-xl font-bold tracking-tight">Sanat Mansoor</span>
             </div>
             <p className="text-muted-foreground">© 2024 Sanat Mansoor. All rights reserved.</p>
