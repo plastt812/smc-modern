@@ -124,9 +124,8 @@ export default function Home() {
               className="absolute inset-0 h-full w-full object-cover opacity-50 select-none pointer-events-none"
             />
             <div className="relative z-10 px-6 flex flex-col items-center justify-center text-center">
-              <Badge variant="secondary" className="mb-6">
-                Industry Leader Since 1974
-              </Badge>
+              
+              
               <h1 className="text-5xl lg:text-6xl font-bold tracking-tight mb-6">
                 Innovating Industrial Solutions Since 1948
               </h1>
@@ -142,7 +141,12 @@ export default function Home() {
                   Start Your Project
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-                <Button variant="outline" size="lg" className="text-lg px-8 py-6">
+                <Button variant="outline" size="lg" className="text-lg px-8 py-6"
+                  // Smooth scroll to the Capabilities section
+                  onClick={() =>
+                    document.getElementById("capabilities")?.scrollIntoView({ behavior: "smooth" })
+                  }
+                >
                   View Capabilities
                 </Button>
               </div>
@@ -372,7 +376,7 @@ export default function Home() {
             
 
             {/* Our Capabilities Section --------------------------------------------------------------------------------------*/}
-      <section className="py-20">
+      <section className="py-20" id="capabilities">
         <div className="max-w-7xl mx-auto px-8">
           <motion.div
             initial={{ y: 20, opacity: 0 }}
