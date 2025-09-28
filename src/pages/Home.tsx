@@ -544,7 +544,7 @@ export default function Home() {
               <CardContent className="p-8 text-center">
                 <MapPin className="h-8 w-8 text-primary mx-auto mb-4" />
                 <h3 className="font-bold mb-2">Visit Us</h3>
-                <p className="text-muted-foreground">#78, 9th Street, Oshtorjan Industrial Park, Esfahan</p>
+                <p className="text-muted-foreground">#78, 9th Street, Oshtorjan Industrial City, Isfahan Province, Iran</p>
               </CardContent>
             </Card>
           </div>
