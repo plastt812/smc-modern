@@ -94,7 +94,7 @@ export default function Contact() {
           <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            className="lg:col-span-2"
+            className="lg:col-span-2 self-start"
           >
             <Card className="border-0">
               <CardContent className="p-8">
@@ -130,7 +130,7 @@ export default function Contact() {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.1 }}
-            className="space-y-6"
+            className="space-y-6 self-start"
           >
             <Card className="border-0">
               <CardContent className="p-6 text-sm">
