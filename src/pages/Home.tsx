@@ -400,8 +400,14 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-muted/80" id="contact">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="py-20 relative" id="contact">
+        <img
+          src="https://harmless-tapir-303.convex.cloud/api/storage/ced5ac2e-ca71-439e-8241-8bb5230ffd64"
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover opacity-40 select-none pointer-events-none"
+        />
+        <div className="absolute inset-0 bg-background/40" />
+        <div className="relative z-10 max-w-7xl mx-auto px-8">
           <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
