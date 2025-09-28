@@ -227,8 +227,13 @@ export default function Home() {
               animate={{ x: 0, opacity: 1 }}
               className="relative"
             >
-              <div className="aspect-square bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 flex items-center justify-center">
-                <Award className="h-48 w-48 text-primary/60" />
+              <div className="aspect-square rounded-2xl overflow-hidden">
+                <img
+                  src="https://harmless-tapir-303.convex.cloud/api/storage/aa6ce926-4b60-4467-8030-6d8c769b00a8"
+                  alt="Industrial operations"
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                />
               </div>
             </motion.div>
           </div>
