@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
 import { useAuth } from "@/hooks/use-auth";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export default function Contact() {
   const navigate = useNavigate();
@@ -171,6 +172,31 @@ export default function Contact() {
               </CardContent>
             </Card>
           </motion.div>
+        </div>
+
+        {/* Map Section */}
+        <div className="max-w-7xl mx-auto px-8 mt-12 space-y-4">
+          <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
+            <h2 className="text-2xl font-bold tracking-tight">Find Us Easily</h2>
+            <p className="text-muted-foreground">
+              Located within the Isfahan Province, SMC benefits from strategic partnerships that enhance our
+              manufacturing capabilities. Whether you need hydraulic solutions for oil &amp; gas, electrical
+              systems for mining, or custom machinery for steel production, our experts are here to help.
+            </p>
+          </motion.div>
+          <Card className="border-0 overflow-hidden">
+            <AspectRatio ratio={16 / 9}>
+              <iframe
+                title="Sanat Mansoor Location"
+                src="https://www.google.com/maps?q=Isfahan%20Province%2C%20Iran&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </AspectRatio>
+          </Card>
         </div>
       </section>
 
