@@ -55,12 +55,10 @@ export default function Home() {
   ];
 
   const services = [
-    "Custom Manufacturing Solutions",
-    "Industrial Equipment Design",
-    "Quality Control & Testing",
-    "Supply Chain Management",
-    "Technical Consulting",
-    "Maintenance & Support"
+    "🏭 Steel Production – Bearings, rollers, crushers, and complete line equipment.",
+    "🛢️ Mining – Crushers, HPGR systems, and hydraulic tools for extreme conditions.",
+    "⛏️ Oil & Gas – High-pressure hydraulic and electrical solutions for safety-critical operations.",
+    "⚡ Power Generation – Components and systems that keep power plants running.",
   ];
 
   return (
@@ -253,11 +251,10 @@ export default function Home() {
               animate={{ x: 0, opacity: 1 }}
             >
               <h2 className="text-4xl font-bold tracking-tight mb-6">
-                Comprehensive Industrial Services
+                Industries We Serve
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
-                From concept to delivery, we provide end-to-end manufacturing solutions 
-                tailored to your specific requirements.
+                With more than 50 years of experience, Sanat Mansoor has gained the technical expertise in delivering industrial solutions for virtually every industry.
               </p>
               <div className="space-y-4">
                 {services.map((service, index) => (
