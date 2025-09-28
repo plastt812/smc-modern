@@ -362,14 +362,7 @@ export default function Home() {
         </div>
       </section>
 
-
-      {/* Stats Section */}
-      <section className="py-20 bg-muted/80">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            
-            
-            {/* Our Capabilities Section --------------------------------------------------------------------------------------*/}
+      {/* Our Capabilities Section --------------------------------------------------------------------------------------*/}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-8">
           <motion.div
@@ -404,14 +397,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
-          </div>
-        </div>
-      </section>
-
-
-      
 
 
       {/* About Section -----------------------------------------------------------------------------------------------*/}
