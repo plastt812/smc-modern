@@ -172,9 +172,9 @@ export default function Home() {
               <motion.div
                 key={stat.label}
                 initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                viewport={{ once: true, amount: 0.25 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: false, amount: 0.25 }}
+                transition={{ duration: 0.4, delay: index * 0.06, ease: "easeOut" }}
                 className="text-center"
               >
                 <div className="text-4xl lg:text-5xl font-bold text-primary mb-2">
@@ -366,14 +366,14 @@ export default function Home() {
               <motion.div
                 key={feature.title}
                 initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                viewport={{ once: true, amount: 0.25 }}
-                whileHover={{ y: -6, scale: 1.01 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: false, amount: 0.25 }}
+                whileHover={{ y: -3, scale: 1.02, transition: { type: "spring", stiffness: 360, damping: 18 } }}
+                transition={{ type: "spring", stiffness: 220, damping: 22, delay: index * 0.06 }}
               >
                 <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
                   <CardContent className="p-8 text-center">
-                    <feature.icon className="h-20 w-20 text-primary mb-6 mx-auto" />
+                    <feature.icon className="h-24 w-24 text-primary mb-6 mx-auto" />
                     <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">
                       {feature.description}
