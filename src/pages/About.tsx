@@ -125,42 +125,22 @@ export default function About() {
             className="lg:col-span-5"
           >
             <div className="p-6">
-              <div className="grid grid-cols-2 gap-5">
-                <div className="rounded-xl border bg-background p-4">
-                  <div className="flex items-center gap-3">
-                    <Factory className="h-6 w-6 text-primary" />
-                    <div>
-                      <p className="text-sm text-muted-foreground">Facilities</p>
-                      <p className="font-semibold">3 global sites</p>
-                    </div>
-                  </div>
+              <div className="flex flex-wrap gap-3">
+                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border">
+                  <Factory className="h-5 w-5 text-primary" />
+                  <span className="text-sm"><span className="font-semibold">Facilities:</span> 3 global sites</span>
                 </div>
-                <div className="rounded-xl border bg-background p-4">
-                  <div className="flex items-center gap-3">
-                    <Users className="h-6 w-6 text-primary" />
-                    <div>
-                      <p className="text-sm text-muted-foreground">Team</p>
-                      <p className="font-semibold">2,000+ experts</p>
-                    </div>
-                  </div>
+                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border">
+                  <Users className="h-5 w-5 text-primary" />
+                  <span className="text-sm"><span className="font-semibold">Team:</span> 2,000+ experts</span>
                 </div>
-                <div className="rounded-xl border bg-background p-4">
-                  <div className="flex items-center gap-3">
-                    <Clock className="h-6 w-6 text-primary" />
-                    <div>
-                      <p className="text-sm text-muted-foreground">On-Time Delivery</p>
-                      <p className="font-semibold">98.7%</p>
-                    </div>
-                  </div>
+                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border">
+                  <Clock className="h-5 w-5 text-primary" />
+                  <span className="text-sm"><span className="font-semibold">On-Time Delivery:</span> 98.7%</span>
                 </div>
-                <div className="rounded-xl border bg-background p-4">
-                  <div className="flex items-center gap-3">
-                    <Award className="h-6 w-6 text-primary" />
-                    <div>
-                      <p className="text-sm text-muted-foreground">Certifications</p>
-                      <p className="font-semibold">ISO 9001, ISO 14001</p>
-                    </div>
-                  </div>
+                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border">
+                  <Award className="h-5 w-5 text-primary" />
+                  <span className="text-sm"><span className="font-semibold">Certifications:</span> ISO 9001, ISO 14001</span>
                 </div>
               </div>
             </div>
@@ -169,25 +149,23 @@ export default function About() {
       </section>
 
       {/* Our Legacy */}
-      <section className="py-20 relative">
-        <img
-          src="https://harmless-tapir-303.convex.cloud/api/storage/c750e4c6-3f16-4d0f-b8ad-89d9006d4740"
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover opacity-10 select-none pointer-events-none"
-        />
-        <div className="absolute inset-0 bg-background/40" />
-        <div className="relative max-w-7xl mx-auto px-8 grid lg:grid-cols-12 gap-10 items-center">
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-12 gap-10 items-center">
           <motion.div
             initial={{ x: -18, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: false, amount: 0.25 }}
             transition={{ type: "spring", stiffness: 220, damping: 22 }}
-            className="lg:col-span-7"
+            className="lg:col-span-5"
           >
-            <h2 className="text-3xl font-bold tracking-tight mb-4">Our Legacy</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              For over 50 years, we have worked alongside leaders in steel production, oil &amp; gas, mining, power generation, and construction. Each project has reinforced our commitment to engineering excellence and long-term partnerships. Today, Sanat Mansoor continues to combine tradition with innovation — delivering solutions that stand the test of time.
-            </p>
+            <div className="overflow-hidden rounded-xl">
+              <img
+                src="https://harmless-tapir-303.convex.cloud/api/storage/c750e4c6-3f16-4d0f-b8ad-89d9006d4740"
+                alt=""
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
+            </div>
           </motion.div>
 
           <motion.div
@@ -195,16 +173,20 @@ export default function About() {
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: false, amount: 0.25 }}
             transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.06 }}
-            className="lg:col-span-5"
+            className="lg:col-span-7"
           >
-            <div className="p-6 space-y-4">
-              <div className="flex items-center gap-3">
-                <Gauge className="h-6 w-6 text-primary" />
-                <p className="text-sm text-muted-foreground">Since 1948 · 1,000+ projects</p>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Our Legacy</h2>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              For over 50 years, we have worked alongside leaders in steel production, oil &amp; gas, mining, power generation, and construction. Each project has reinforced our commitment to engineering excellence and long-term partnerships. Today, Sanat Mansoor continues to combine tradition with innovation — delivering solutions that stand the test of time.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border">
+                <Gauge className="h-5 w-5 text-primary" />
+                <span className="text-sm">Since 1948 · 1,000+ projects</span>
               </div>
-              <div className="flex items-center gap-3">
-                <Cog className="h-6 w-6 text-primary" />
-                <p className="text-sm text-muted-foreground">Integrated engineering and manufacturing</p>
+              <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border">
+                <Cog className="h-5 w-5 text-primary" />
+                <span className="text-sm">Integrated engineering and manufacturing</span>
               </div>
             </div>
           </motion.div>
@@ -227,31 +209,32 @@ export default function About() {
             </p>
           </motion.div>
 
-          <div className="p-8">
-            <div className="grid md:grid-cols-2 gap-5">
-              <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-primary mt-1" />
-                <span>Hydraulic Engineering – Design and production of high-pressure systems.</span>
+          <div className="p-8 max-w-4xl mx-auto">
+            <div className="relative border-l pl-6 space-y-5">
+              <div className="absolute left-0 top-0 bottom-0 border-l" />
+              <div className="relative">
+                <span className="absolute -left-3.5 top-1.5 h-2.5 w-2.5 rounded-full bg-primary" />
+                <p><span className="font-semibold">Hydraulic Engineering</span> — <span className="text-muted-foreground">Design and production of high-pressure systems.</span></p>
               </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-primary mt-1" />
-                <span>Precision &amp; Large-Piece Machining – Handling complex and oversized components.</span>
+              <div className="relative">
+                <span className="absolute -left-3.5 top-1.5 h-2.5 w-2.5 rounded-full bg-primary" />
+                <p><span className="font-semibold">Precision &amp; Large-Piece Machining</span> — <span className="text-muted-foreground">Handling complex and oversized components.</span></p>
               </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-primary mt-1" />
-                <span>Advanced Casting – Through our subsidiary Felez Taban, we produce critical parts with strength and reliability.</span>
+              <div className="relative">
+                <span className="absolute -left-3.5 top-1.5 h-2.5 w-2.5 rounded-full bg-primary" />
+                <p><span className="font-semibold">Advanced Casting</span> — <span className="text-muted-foreground">Through our subsidiary Felez Taban, we produce critical parts with strength and reliability.</span></p>
               </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-primary mt-1" />
-                <span>Certified Welding &amp; Fabrication – Building durable assemblies that meet international standards.</span>
+              <div className="relative">
+                <span className="absolute -left-3.5 top-1.5 h-2.5 w-2.5 rounded-full bg-primary" />
+                <p><span className="font-semibold">Certified Welding &amp; Fabrication</span> — <span className="text-muted-foreground">Building durable assemblies that meet international standards.</span></p>
               </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-primary mt-1" />
-                <span>Reverse Engineering – Developing spare parts and systems to extend equipment life.</span>
+              <div className="relative">
+                <span className="absolute -left-3.5 top-1.5 h-2.5 w-2.5 rounded-full bg-primary" />
+                <p><span className="font-semibold">Reverse Engineering</span> — <span className="text-muted-foreground">Developing spare parts and systems to extend equipment life.</span></p>
               </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-primary mt-1" />
-                <span>After-Sales Service – Ongoing support, maintenance, and spare parts supply.</span>
+              <div className="relative">
+                <span className="absolute -left-3.5 top-1.5 h-2.5 w-2.5 rounded-full bg-primary" />
+                <p><span className="font-semibold">After-Sales Service</span> — <span className="text-muted-foreground">Ongoing support, maintenance, and spare parts supply.</span></p>
               </div>
             </div>
           </div>
@@ -273,18 +256,24 @@ export default function About() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <motion.div whileHover={{ y: -3, scale: 1.02 }} transition={{ type: "spring", stiffness: 360, damping: 18 }} className="p-6">
-              <h3 className="font-bold mb-2">SAMIE</h3>
-              <p className="text-sm text-muted-foreground">Heavy industrial equipment and custom machinery.</p>
+          <div className="max-w-3xl mx-auto divide-y">
+            <motion.div whileHover={{ y: -2 }} transition={{ type: "spring", stiffness: 360, damping: 18 }} className="py-5 flex items-start justify-between gap-6">
+              <div>
+                <h3 className="font-semibold">SAMIE</h3>
+                <p className="text-sm text-muted-foreground">Heavy industrial equipment and custom machinery.</p>
+              </div>
             </motion.div>
-            <motion.div whileHover={{ y: -3, scale: 1.02 }} transition={{ type: "spring", stiffness: 360, damping: 18 }} className="p-6">
-              <h3 className="font-bold mb-2">POWERMAN</h3>
-              <p className="text-sm text-muted-foreground">High-pressure hydraulic tools.</p>
+            <motion.div whileHover={{ y: -2 }} transition={{ type: "spring", stiffness: 360, damping: 18 }} className="py-5 flex items-start justify-between gap-6">
+              <div>
+                <h3 className="font-semibold">POWERMAN</h3>
+                <p className="text-sm text-muted-foreground">High-pressure hydraulic tools.</p>
+              </div>
             </motion.div>
-            <motion.div whileHover={{ y: -3, scale: 1.02 }} transition={{ type: "spring", stiffness: 360, damping: 18 }} className="p-6">
-              <h3 className="font-bold mb-2">SAMEE</h3>
-              <p className="text-sm text-muted-foreground">Industrial electrical equipment.</p>
+            <motion.div whileHover={{ y: -2 }} transition={{ type: "spring", stiffness: 360, damping: 18 }} className="py-5 flex items-start justify-between gap-6">
+              <div>
+                <h3 className="font-semibold">SAMEE</h3>
+                <p className="text-sm text-muted-foreground">Industrial electrical equipment.</p>
+              </div>
             </motion.div>
           </div>
         </div>
@@ -304,12 +293,12 @@ export default function About() {
           </motion.div>
 
           <div className="p-6">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
-              <div className="rounded-lg border bg-background px-4 py-3 text-center">🏭 Steel Production</div>
-              <div className="rounded-lg border bg-background px-4 py-3 text-center">⛏️ Mining</div>
-              <div className="rounded-lg border bg-background px-4 py-3 text-center">🛢️ Oil &amp; Gas</div>
-              <div className="rounded-lg border bg-background px-4 py-3 text-center">🔋 Power Generation</div>
-              <div className="rounded-lg border bg-background px-4 py-3 text-center">🚧 Construction</div>
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <span className="px-4 py-2 rounded-full border bg-background">🏭 <span className="font-medium">Steel Production</span></span>
+              <span className="px-4 py-2 rounded-full border bg-background">⛏️ <span className="font-medium">Mining</span></span>
+              <span className="px-4 py-2 rounded-full border bg-background">🛢️ <span className="font-medium">Oil &amp; Gas</span></span>
+              <span className="px-4 py-2 rounded-full border bg-background">🔋 <span className="font-medium">Power Generation</span></span>
+              <span className="px-4 py-2 rounded-full border bg-background">🚧 <span className="font-medium">Construction</span></span>
             </div>
           </div>
         </div>
