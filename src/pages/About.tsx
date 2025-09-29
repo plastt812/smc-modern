@@ -103,7 +103,7 @@ export default function About() {
             transition={{ type: "spring", stiffness: 220, damping: 22 }}
             className="lg:col-span-7"
           >
-            <div className="rounded-2xl border bg-card text-card-foreground shadow-sm">
+            <div className="">
               <div className="p-8">
                 <h2 className="text-3xl font-bold tracking-tight mb-5">Who We Are</h2>
                 <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
@@ -125,7 +125,7 @@ export default function About() {
             transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.06 }}
             className="lg:col-span-5"
           >
-            <Card className="border-0 shadow-sm rounded-2xl">
+            <Card className="border-none shadow-none bg-transparent rounded-none">
               <CardContent className="p-6">
                 <div className="grid grid-cols-2 gap-5">
                   <div className="rounded-xl border bg-background p-4">
@@ -200,7 +200,7 @@ export default function About() {
             transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.06 }}
             className="lg:col-span-5"
           >
-            <Card className="border-0 shadow-sm rounded-2xl">
+            <Card className="border-none shadow-none bg-transparent rounded-none">
               <CardContent className="p-6 space-y-4">
                 <div className="flex items-center gap-3">
                   <Gauge className="h-6 w-6 text-primary" />
@@ -232,7 +232,7 @@ export default function About() {
             </p>
           </motion.div>
 
-          <Card className="border-0 shadow-sm rounded-2xl">
+          <Card className="border-none shadow-none bg-transparent rounded-none">
             <CardContent className="p-8">
               <div className="grid md:grid-cols-2 gap-5">
                 <div className="flex items-start gap-3">
@@ -282,7 +282,7 @@ export default function About() {
 
           <div className="grid md:grid-cols-3 gap-6">
             <motion.div whileHover={{ y: -3, scale: 1.02 }} transition={{ type: "spring", stiffness: 360, damping: 18 }}>
-              <Card className="border-0 shadow-sm h-full rounded-2xl">
+              <Card className="border-none shadow-none bg-transparent h-full rounded-none">
                 <CardContent className="p-6">
                   <h3 className="font-bold mb-2">SAMIE</h3>
                   <p className="text-sm text-muted-foreground">
@@ -292,7 +292,7 @@ export default function About() {
               </Card>
             </motion.div>
             <motion.div whileHover={{ y: -3, scale: 1.02 }} transition={{ type: "spring", stiffness: 360, damping: 18 }}>
-              <Card className="border-0 shadow-sm h-full rounded-2xl">
+              <Card className="border-none shadow-none bg-transparent h-full rounded-none">
                 <CardContent className="p-6">
                   <h3 className="font-bold mb-2">POWERMAN</h3>
                   <p className="text-sm text-muted-foreground">
@@ -330,7 +330,7 @@ export default function About() {
             </p>
           </motion.div>
 
-          <Card className="border-0 shadow-sm rounded-2xl">
+          <Card className="border-none shadow-none bg-transparent rounded-none">
             <CardContent className="p-6">
               <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
                 <div className="rounded-lg border bg-background px-4 py-3 text-center">🏭 Steel Production</div>
@@ -358,7 +358,7 @@ export default function About() {
                 whileHover={{ y: -3, scale: 1.02, transition: { type: "spring", stiffness: 360, damping: 18 } }}
                 transition={{ type: "spring", stiffness: 220, damping: 22, delay: i * 0.06 }}
               >
-                <Card className="border-0 h-full rounded-2xl">
+                <Card className="border-none shadow-none bg-transparent h-full rounded-none">
                   <CardContent className="p-6 text-center">
                     <v.icon className="h-10 w-10 text-primary mb-4 mx-auto" />
                     <h3 className="font-bold mb-2">{v.title}</h3>
@@ -374,7 +374,7 @@ export default function About() {
       {/* Our Vision for the Future */}
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-8">
-          <Card className="border-0 shadow-sm rounded-2xl">
+          <Card className="border-none shadow-none bg-transparent rounded-none">
             <CardContent className="p-10">
               <h2 className="text-3xl font-bold tracking-tight mb-4 text-center">Our Vision for the Future</h2>
               <p className="text-lg text-muted-foreground leading-relaxed text-center">
