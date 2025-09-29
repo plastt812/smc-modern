@@ -258,32 +258,83 @@ export default function About() {
             initial={{ y: 16, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: false, amount: 0.25 }}
-            className="text-center mb-10"
+            className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold tracking-tight mb-3">Our Brands</h2>
             <p className="text-lg text-muted-foreground">
-              Sanat Mansoor operates through three specialized brands. Together, these brands enable us to deliver complete mechanical, hydraulic, and electrical solutions.
+              Three specialized brands deliver end‑to‑end industrial solutions across heavy equipment,
+              high‑pressure hydraulics, and electrical systems.
             </p>
           </motion.div>
 
-          <div className="max-w-3xl mx-auto divide-y">
-            <motion.div whileHover={{ y: -2 }} transition={{ type: "spring", stiffness: 360, damping: 18 }} className="py-5 flex items-start justify-between gap-6">
-              <div>
-                <h3 className="font-semibold">SAMIE</h3>
-                <p className="text-sm text-muted-foreground">Heavy industrial equipment and custom machinery.</p>
-              </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* SAMIE */}
+            <motion.div
+              initial={{ y: 16, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: false, amount: 0.25 }}
+              whileHover={{ y: -4, scale: 1.01, transition: { type: "spring", stiffness: 360, damping: 18 } }}
+              transition={{ type: "spring", stiffness: 220, damping: 22 }}
+            >
+              <Card className="h-full rounded-xl border bg-background/60 backdrop-blur-md ring-1 ring-border hover:ring-primary/40 transition-all shadow-sm">
+                <CardContent className="p-8 text-center">
+                  <img
+                    src="https://harmless-tapir-303.convex.cloud/api/storage/e7220248-19c5-4689-8607-7b0341910b7e"
+                    alt="SAMIE logo"
+                    className="h-10 w-auto mx-auto mb-4 object-contain"
+                    loading="lazy"
+                  />
+                  <h3 className="text-lg font-semibold mb-1">SAMIE</h3>
+                  <p className="text-sm text-muted-foreground mb-4">Heavy Industrial Equipment</p>
+                  <div className="h-1 w-16 bg-gradient-to-r from-primary to-primary/40 mx-auto rounded-full" />
+                </CardContent>
+              </Card>
             </motion.div>
-            <motion.div whileHover={{ y: -2 }} transition={{ type: "spring", stiffness: 360, damping: 18 }} className="py-5 flex items-start justify-between gap-6">
-              <div>
-                <h3 className="font-semibold">POWERMAN</h3>
-                <p className="text-sm text-muted-foreground">High-pressure hydraulic tools.</p>
-              </div>
+
+            {/* POWERMAN */}
+            <motion.div
+              initial={{ y: 16, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: false, amount: 0.25 }}
+              whileHover={{ y: -4, scale: 1.01, transition: { type: "spring", stiffness: 360, damping: 18 } }}
+              transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.06 }}
+            >
+              <Card className="h-full rounded-xl border bg-background/60 backdrop-blur-md ring-1 ring-border hover:ring-primary/40 transition-all shadow-sm">
+                <CardContent className="p-8 text-center">
+                  <img
+                    src="https://harmless-tapir-303.convex.cloud/api/storage/710bd358-735e-4966-b819-effdc9610938"
+                    alt="POWERMAN logo"
+                    className="h-10 w-auto mx-auto mb-4 object-contain"
+                    loading="lazy"
+                  />
+                  <h3 className="text-lg font-semibold mb-1">POWERMAN</h3>
+                  <p className="text-sm text-muted-foreground mb-4">High‑Pressure Hydraulic Tools</p>
+                  <div className="h-1 w-16 bg-gradient-to-r from-primary to-primary/40 mx-auto rounded-full" />
+                </CardContent>
+              </Card>
             </motion.div>
-            <motion.div whileHover={{ y: -2 }} transition={{ type: "spring", stiffness: 360, damping: 18 }} className="py-5 flex items-start justify-between gap-6">
-              <div>
-                <h3 className="font-semibold">SAMEE</h3>
-                <p className="text-sm text-muted-foreground">Industrial electrical equipment.</p>
-              </div>
+
+            {/* SAMEE */}
+            <motion.div
+              initial={{ y: 16, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: false, amount: 0.25 }}
+              whileHover={{ y: -4, scale: 1.01, transition: { type: "spring", stiffness: 360, damping: 18 } }}
+              transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.12 }}
+            >
+              <Card className="h-full rounded-xl border bg-background/60 backdrop-blur-md ring-1 ring-border hover:ring-primary/40 transition-all shadow-sm">
+                <CardContent className="p-8 text-center">
+                  <img
+                    src="https://harmless-tapir-303.convex.cloud/api/storage/3a72f77b-550f-4ecc-a660-ecb8d3851593"
+                    alt="SAMEE logo"
+                    className="h-10 w-auto mx-auto mb-4 object-contain"
+                    loading="lazy"
+                  />
+                  <h3 className="text-lg font-semibold mb-1">SAMEE</h3>
+                  <p className="text-sm text-muted-foreground mb-4">Electrical Equipment</p>
+                  <div className="h-1 w-16 bg-gradient-to-r from-primary to-primary/40 mx-auto rounded-full" />
+                </CardContent>
+              </Card>
             </motion.div>
           </div>
         </div>
