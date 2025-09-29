@@ -341,7 +341,7 @@ export default function About() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-8">
           <h2 className="text-3xl font-bold tracking-tight mb-10 text-center">Our Core Values</h2>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((v, i) => (
               <motion.div
                 key={v.title}
@@ -350,22 +350,15 @@ export default function About() {
                 viewport={{ once: false, amount: 0.25 }}
                 whileHover={{ y: -3, scale: 1.02, transition: { type: "spring", stiffness: 360, damping: 18 } }}
                 transition={{ type: "spring", stiffness: 220, damping: 22, delay: i * 0.06 }}
-                className="relative"
               >
-                <Card className="h-full overflow-hidden rounded-2xl border bg-background/60 backdrop-blur-md ring-1 ring-border hover:ring-primary/50 transition-all shadow-sm">
-                  <CardContent className="p-8">
-                    {/* Accent bar */}
-                    <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
-                    {/* Floating icon chip */}
-                    <div className="mb-5">
-                      <div className="inline-flex items-center justify-center rounded-xl bg-primary/10 ring-1 ring-primary/20 p-3 shadow-sm">
-                        <v.icon className="h-8 w-8 text-primary" />
-                      </div>
+                <Card className="h-full rounded-xl border bg-background/60 backdrop-blur-md ring-1 ring-border hover:ring-primary/40 transition-all shadow-sm">
+                  <CardContent className="p-8 text-center">
+                    <div className="h-1 w-16 bg-gradient-to-r from-primary to-primary/40 mx-auto mb-6 rounded-full" />
+                    <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-4">
+                      <v.icon className="h-10 w-10 text-primary" />
                     </div>
-                    <h3 className="text-xl font-semibold mb-2">{v.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {v.desc}
-                    </p>
+                    <h3 className="text-lg font-semibold mb-2">{v.title}</h3>
+                    <p className="text-sm text-muted-foreground">{v.desc}</p>
                   </CardContent>
                 </Card>
               </motion.div>
