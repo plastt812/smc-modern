@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Factory,
   BadgeCheck,
@@ -308,22 +309,23 @@ export default function About() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-8">
           <h2 className="text-3xl font-bold tracking-tight mb-10 text-center">Our Core Values</h2>
-          <div className="max-w-4xl mx-auto divide-y">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((v, i) => (
               <motion.div
                 key={v.title}
                 initial={{ y: 16, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: false, amount: 0.25 }}
-                whileHover={{ y: -2, transition: { type: "spring", stiffness: 360, damping: 18 } }}
+                whileHover={{ y: -3, scale: 1.02, transition: { type: "spring", stiffness: 360, damping: 18 } }}
                 transition={{ type: "spring", stiffness: 220, damping: 22, delay: i * 0.06 }}
-                className="py-5 flex items-start gap-4"
               >
-                <v.icon className="h-8 w-8 text-primary mt-1 shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-1">{v.title}</h3>
-                  <p className="text-muted-foreground">{v.desc}</p>
-                </div>
+                <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
+                  <CardContent className="p-8 text-center">
+                    <v.icon className="h-12 w-12 text-primary mb-4 mx-auto" />
+                    <h3 className="text-lg font-semibold mb-2">{v.title}</h3>
+                    <p className="text-sm text-muted-foreground">{v.desc}</p>
+                  </CardContent>
+                </Card>
               </motion.div>
             ))}
           </div>
