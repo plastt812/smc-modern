@@ -283,24 +283,60 @@ export default function About() {
       {/* Industries We Serve */}
       <section className="py-20 bg-muted/80">
         <div className="max-w-7xl mx-auto px-8">
-          <motion.div
-            initial={{ y: 16, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: false, amount: 0.25 }}
-            className="mb-8"
-          >
-            <h2 className="text-3xl font-bold tracking-tight mb-3">Industries We Serve</h2>
-            <p className="text-muted-foreground">Our products and services are trusted in industries where performance is critical:</p>
-          </motion.div>
+          <div className="grid lg:grid-cols-12 gap-10 items-center">
+            <motion.div
+              initial={{ x: -18, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: false, amount: 0.25 }}
+              transition={{ type: "spring", stiffness: 220, damping: 22 }}
+              className="lg:col-span-6"
+            >
+              <h2 className="text-3xl font-bold tracking-tight mb-4">Industries We Serve</h2>
+              <p className="text-muted-foreground mb-8">
+                Our products and services are trusted where performance is critical. From heavy industry to energy,
+                we deliver systems engineered to endure.
+              </p>
 
-          <div className="p-6">
-            <div className="flex flex-wrap items-center justify-center gap-3">
-              <span className="px-4 py-2 rounded-full border bg-background">🏭 <span className="font-medium">Steel Production</span></span>
-              <span className="px-4 py-2 rounded-full border bg-background">⛏️ <span className="font-medium">Mining</span></span>
-              <span className="px-4 py-2 rounded-full border bg-background">🛢️ <span className="font-medium">Oil &amp; Gas</span></span>
-              <span className="px-4 py-2 rounded-full border bg-background">🔋 <span className="font-medium">Power Generation</span></span>
-              <span className="px-4 py-2 rounded-full border bg-background">🚧 <span className="font-medium">Construction</span></span>
-            </div>
+              <div className="grid sm:grid-cols-2 gap-3">
+                <span className="px-4 py-2 rounded-full border bg-background inline-flex items-center justify-center gap-2">
+                  <span className="text-base">🏭</span>
+                  <span className="font-medium">Steel Production</span>
+                </span>
+                <span className="px-4 py-2 rounded-full border bg-background inline-flex items-center justify-center gap-2">
+                  <span className="text-base">⛏️</span>
+                  <span className="font-medium">Mining</span>
+                </span>
+                <span className="px-4 py-2 rounded-full border bg-background inline-flex items-center justify-center gap-2">
+                  <span className="text-base">🛢️</span>
+                  <span className="font-medium">Oil &amp; Gas</span>
+                </span>
+                <span className="px-4 py-2 rounded-full border bg-background inline-flex items-center justify-center gap-2">
+                  <span className="text-base">🔋</span>
+                  <span className="font-medium">Power Generation</span>
+                </span>
+                <span className="px-4 py-2 rounded-full border bg-background inline-flex items-center justify-center gap-2 sm:col-span-2">
+                  <span className="text-base">🚧</span>
+                  <span className="font-medium">Construction</span>
+                </span>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ x: 18, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: false, amount: 0.25 }}
+              transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.06 }}
+              className="lg:col-span-6"
+            >
+              <div className="aspect-[16/10] overflow-hidden">
+                <img
+                  src="https://harmless-tapir-303.convex.cloud/api/storage/aa6ce926-4b60-4467-8030-6d8c769b00a8"
+                  alt="Industrial operations"
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
