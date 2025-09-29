@@ -95,7 +95,8 @@ export default function About() {
 
       {/* Who We Are + Key Metrics */}
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-12 gap-10 items-start">
+        <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-12 gap-12 items-start">
+          {/* Left: Who we are */}
           <motion.div
             initial={{ y: 16, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -103,21 +104,28 @@ export default function About() {
             transition={{ type: "spring", stiffness: 220, damping: 22 }}
             className="lg:col-span-7"
           >
-            <div className="">
-              <div className="">
-                <h2 className="text-3xl font-bold tracking-tight mb-5">Who We Are</h2>
-                <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-                  <p>
-                    Sanat Mansoor is a family-owned industrial company with a history dating back to 1948. From our early beginnings as a small engineering workshop, we have grown into a trusted partner for some of the most demanding industries in the world. Over the decades, we have successfully delivered more than 1,000 projects, building a reputation for reliability, precision, and innovation.
-                  </p>
-                  <p>
-                    For over 50 years, we have worked alongside leaders in steel production, oil &amp; gas, mining, power generation, and construction. Each project has reinforced our commitment to engineering excellence and long-term partnerships. Today, Sanat Mansoor continues to combine tradition with innovation — delivering solutions that stand the test of time.
-                  </p>
-                </div>
+            <div className="max-w-2xl">
+              <Badge variant="secondary" className="mb-3">Who We Are</Badge>
+              <h2 className="text-3xl font-bold tracking-tight mb-3">
+                A family-built industrial partner since 1948
+              </h2>
+              <p className="text-base text-muted-foreground mb-6">
+                Precision manufacturing, integrated engineering, and long-term partnerships across the world's most demanding industries.
+              </p>
+
+              {/* Editorial rail */}
+              <div className="border-l pl-6 space-y-6 text-lg text-muted-foreground leading-relaxed">
+                <p>
+                  Sanat Mansoor is a family-owned industrial company with a history dating back to 1948. From our early beginnings as a small engineering workshop, we have grown into a trusted partner for some of the most demanding industries in the world. Over the decades, we have successfully delivered more than 1,000 projects, building a reputation for reliability, precision, and innovation.
+                </p>
+                <p>
+                  For over 50 years, we have worked alongside leaders in steel production, oil &amp; gas, mining, power generation, and construction. Each project has reinforced our commitment to engineering excellence and long-term partnerships. Today, Sanat Mansoor continues to combine tradition with innovation — delivering solutions that stand the test of time.
+                </p>
               </div>
             </div>
           </motion.div>
 
+          {/* Right: Key metrics */}
           <motion.div
             initial={{ y: 16, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -125,21 +133,22 @@ export default function About() {
             transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.06 }}
             className="lg:col-span-5"
           >
-            <div className="">
-              <div className="flex flex-wrap gap-3">
-                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border">
+            <div className="space-y-4">
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Key Metrics</h3>
+              <div className="grid sm:grid-cols-2 gap-3">
+                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border bg-background/60 backdrop-blur">
                   <Factory className="h-5 w-5 text-primary" />
                   <span className="text-sm"><span className="font-semibold">Facilities:</span> 3 global sites</span>
                 </div>
-                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border">
+                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border bg-background/60 backdrop-blur">
                   <Users className="h-5 w-5 text-primary" />
                   <span className="text-sm"><span className="font-semibold">Team:</span> 2,000+ experts</span>
                 </div>
-                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border">
+                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border bg-background/60 backdrop-blur">
                   <Clock className="h-5 w-5 text-primary" />
                   <span className="text-sm"><span className="font-semibold">On-Time Delivery:</span> 98.7%</span>
                 </div>
-                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border">
+                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border bg-background/60 backdrop-blur">
                   <Award className="h-5 w-5 text-primary" />
                   <span className="text-sm"><span className="font-semibold">Certifications:</span> ISO 9001, ISO 14001</span>
                 </div>
