@@ -103,7 +103,7 @@ export default function About() {
             className="lg:col-span-7"
           >
             <div className="">
-              <div className="p-8">
+              <div className="">
                 <h2 className="text-3xl font-bold tracking-tight mb-5">Who We Are</h2>
                 <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                   <p>
@@ -124,7 +124,7 @@ export default function About() {
             transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.06 }}
             className="lg:col-span-5"
           >
-            <div className="p-6">
+            <div className="">
               <div className="flex flex-wrap gap-3">
                 <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border">
                   <Factory className="h-5 w-5 text-primary" />
@@ -158,7 +158,7 @@ export default function About() {
             transition={{ type: "spring", stiffness: 220, damping: 22 }}
             className="lg:col-span-5"
           >
-            <div className="overflow-hidden rounded-xl">
+            <div className="overflow-hidden">
               <img
                 src="https://harmless-tapir-303.convex.cloud/api/storage/c750e4c6-3f16-4d0f-b8ad-89d9006d4740"
                 alt=""
@@ -308,20 +308,22 @@ export default function About() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-8">
           <h2 className="text-3xl font-bold tracking-tight mb-10 text-center">Our Core Values</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="max-w-4xl mx-auto divide-y">
             {values.map((v, i) => (
               <motion.div
                 key={v.title}
                 initial={{ y: 16, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: false, amount: 0.25 }}
-                whileHover={{ y: -3, scale: 1.02, transition: { type: "spring", stiffness: 360, damping: 18 } }}
+                whileHover={{ y: -2, transition: { type: "spring", stiffness: 360, damping: 18 } }}
                 transition={{ type: "spring", stiffness: 220, damping: 22, delay: i * 0.06 }}
-                className="p-6 text-center"
+                className="py-5 flex items-start gap-4"
               >
-                <v.icon className="h-10 w-10 text-primary mb-4 mx-auto" />
-                <h3 className="font-bold mb-2">{v.title}</h3>
-                <p className="text-muted-foreground">{v.desc}</p>
+                <v.icon className="h-8 w-8 text-primary mt-1 shrink-0" />
+                <div>
+                  <h3 className="font-semibold mb-1">{v.title}</h3>
+                  <p className="text-muted-foreground">{v.desc}</p>
+                </div>
               </motion.div>
             ))}
           </div>
