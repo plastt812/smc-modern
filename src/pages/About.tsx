@@ -330,7 +330,7 @@ export default function About() {
             >
               <div className="aspect-[16/10] overflow-hidden">
                 <img
-                  src="https://harmless-tapir-303.convex.cloud/api/storage/aa6ce926-4b60-4467-8030-6d8c769b00a8"
+                  src="https://harmless-tapir-303.convex.cloud/api/storage/f3606006-bd0d-4bac-bd45-c1bdf47d7b12"
                   alt="Industrial operations"
                   className="h-full w-full object-cover"
                   loading="lazy"
