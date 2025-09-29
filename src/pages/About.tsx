@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
   Factory,
@@ -125,48 +124,46 @@ export default function About() {
             transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.06 }}
             className="lg:col-span-5"
           >
-            <Card className="border-none shadow-none bg-transparent rounded-none">
-              <CardContent className="p-6">
-                <div className="grid grid-cols-2 gap-5">
-                  <div className="rounded-xl border bg-background p-4">
-                    <div className="flex items-center gap-3">
-                      <Factory className="h-6 w-6 text-primary" />
-                      <div>
-                        <p className="text-sm text-muted-foreground">Facilities</p>
-                        <p className="font-semibold">3 global sites</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="rounded-xl border bg-background p-4">
-                    <div className="flex items-center gap-3">
-                      <Users className="h-6 w-6 text-primary" />
-                      <div>
-                        <p className="text-sm text-muted-foreground">Team</p>
-                        <p className="font-semibold">2,000+ experts</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="rounded-xl border bg-background p-4">
-                    <div className="flex items-center gap-3">
-                      <Clock className="h-6 w-6 text-primary" />
-                      <div>
-                        <p className="text-sm text-muted-foreground">On-Time Delivery</p>
-                        <p className="font-semibold">98.7%</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="rounded-xl border bg-background p-4">
-                    <div className="flex items-center gap-3">
-                      <Award className="h-6 w-6 text-primary" />
-                      <div>
-                        <p className="text-sm text-muted-foreground">Certifications</p>
-                        <p className="font-semibold">ISO 9001, ISO 14001</p>
-                      </div>
+            <div className="p-6">
+              <div className="grid grid-cols-2 gap-5">
+                <div className="rounded-xl border bg-background p-4">
+                  <div className="flex items-center gap-3">
+                    <Factory className="h-6 w-6 text-primary" />
+                    <div>
+                      <p className="text-sm text-muted-foreground">Facilities</p>
+                      <p className="font-semibold">3 global sites</p>
                     </div>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+                <div className="rounded-xl border bg-background p-4">
+                  <div className="flex items-center gap-3">
+                    <Users className="h-6 w-6 text-primary" />
+                    <div>
+                      <p className="text-sm text-muted-foreground">Team</p>
+                      <p className="font-semibold">2,000+ experts</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="rounded-xl border bg-background p-4">
+                  <div className="flex items-center gap-3">
+                    <Clock className="h-6 w-6 text-primary" />
+                    <div>
+                      <p className="text-sm text-muted-foreground">On-Time Delivery</p>
+                      <p className="font-semibold">98.7%</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="rounded-xl border bg-background p-4">
+                  <div className="flex items-center gap-3">
+                    <Award className="h-6 w-6 text-primary" />
+                    <div>
+                      <p className="text-sm text-muted-foreground">Certifications</p>
+                      <p className="font-semibold">ISO 9001, ISO 14001</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -200,18 +197,16 @@ export default function About() {
             transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.06 }}
             className="lg:col-span-5"
           >
-            <Card className="border-none shadow-none bg-transparent rounded-none">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex items-center gap-3">
-                  <Gauge className="h-6 w-6 text-primary" />
-                  <p className="text-sm text-muted-foreground">Since 1948 · 1,000+ projects</p>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Cog className="h-6 w-6 text-primary" />
-                  <p className="text-sm text-muted-foreground">Integrated engineering and manufacturing</p>
-                </div>
-              </CardContent>
-            </Card>
+            <div className="p-6 space-y-4">
+              <div className="flex items-center gap-3">
+                <Gauge className="h-6 w-6 text-primary" />
+                <p className="text-sm text-muted-foreground">Since 1948 · 1,000+ projects</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <Cog className="h-6 w-6 text-primary" />
+                <p className="text-sm text-muted-foreground">Integrated engineering and manufacturing</p>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -232,36 +227,34 @@ export default function About() {
             </p>
           </motion.div>
 
-          <Card className="border-none shadow-none bg-transparent rounded-none">
-            <CardContent className="p-8">
-              <div className="grid md:grid-cols-2 gap-5">
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-primary mt-1" />
-                  <span>Hydraulic Engineering – Design and production of high-pressure systems.</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-primary mt-1" />
-                  <span>Precision &amp; Large-Piece Machining – Handling complex and oversized components.</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-primary mt-1" />
-                  <span>Advanced Casting – Through our subsidiary Felez Taban, we produce critical parts with strength and reliability.</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-primary mt-1" />
-                  <span>Certified Welding &amp; Fabrication – Building durable assemblies that meet international standards.</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-primary mt-1" />
-                  <span>Reverse Engineering – Developing spare parts and systems to extend equipment life.</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-primary mt-1" />
-                  <span>After-Sales Service – Ongoing support, maintenance, and spare parts supply.</span>
-                </div>
+          <div className="p-8">
+            <div className="grid md:grid-cols-2 gap-5">
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-primary mt-1" />
+                <span>Hydraulic Engineering – Design and production of high-pressure systems.</span>
               </div>
-            </CardContent>
-          </Card>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-primary mt-1" />
+                <span>Precision &amp; Large-Piece Machining – Handling complex and oversized components.</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-primary mt-1" />
+                <span>Advanced Casting – Through our subsidiary Felez Taban, we produce critical parts with strength and reliability.</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-primary mt-1" />
+                <span>Certified Welding &amp; Fabrication – Building durable assemblies that meet international standards.</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-primary mt-1" />
+                <span>Reverse Engineering – Developing spare parts and systems to extend equipment life.</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-primary mt-1" />
+                <span>After-Sales Service – Ongoing support, maintenance, and spare parts supply.</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -280,36 +273,18 @@ export default function About() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <motion.div whileHover={{ y: -3, scale: 1.02 }} transition={{ type: "spring", stiffness: 360, damping: 18 }}>
-              <Card className="border-none shadow-none bg-transparent h-full rounded-none">
-                <CardContent className="p-6">
-                  <h3 className="font-bold mb-2">SAMIE</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Heavy industrial equipment and custom machinery.
-                  </p>
-                </CardContent>
-              </Card>
+          <div className="grid md:grid-cols-3 gap-8">
+            <motion.div whileHover={{ y: -3, scale: 1.02 }} transition={{ type: "spring", stiffness: 360, damping: 18 }} className="p-6">
+              <h3 className="font-bold mb-2">SAMIE</h3>
+              <p className="text-sm text-muted-foreground">Heavy industrial equipment and custom machinery.</p>
             </motion.div>
-            <motion.div whileHover={{ y: -3, scale: 1.02 }} transition={{ type: "spring", stiffness: 360, damping: 18 }}>
-              <Card className="border-none shadow-none bg-transparent h-full rounded-none">
-                <CardContent className="p-6">
-                  <h3 className="font-bold mb-2">POWERMAN</h3>
-                  <p className="text-sm text-muted-foreground">
-                    High-pressure hydraulic tools.
-                  </p>
-                </CardContent>
-              </Card>
+            <motion.div whileHover={{ y: -3, scale: 1.02 }} transition={{ type: "spring", stiffness: 360, damping: 18 }} className="p-6">
+              <h3 className="font-bold mb-2">POWERMAN</h3>
+              <p className="text-sm text-muted-foreground">High-pressure hydraulic tools.</p>
             </motion.div>
-            <motion.div whileHover={{ y: -3, scale: 1.02 }} transition={{ type: "spring", stiffness: 360, damping: 18 }}>
-              <Card className="border-0 shadow-sm h-full rounded-2xl">
-                <CardContent className="p-6">
-                  <h3 className="font-bold mb-2">SAMEE</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Industrial electrical equipment.
-                  </p>
-                </CardContent>
-              </Card>
+            <motion.div whileHover={{ y: -3, scale: 1.02 }} transition={{ type: "spring", stiffness: 360, damping: 18 }} className="p-6">
+              <h3 className="font-bold mb-2">SAMEE</h3>
+              <p className="text-sm text-muted-foreground">Industrial electrical equipment.</p>
             </motion.div>
           </div>
         </div>
@@ -325,22 +300,18 @@ export default function About() {
             className="mb-8"
           >
             <h2 className="text-3xl font-bold tracking-tight mb-3">Industries We Serve</h2>
-            <p className="text-muted-foreground">
-              Our products and services are trusted in industries where performance is critical:
-            </p>
+            <p className="text-muted-foreground">Our products and services are trusted in industries where performance is critical:</p>
           </motion.div>
 
-          <Card className="border-none shadow-none bg-transparent rounded-none">
-            <CardContent className="p-6">
-              <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                <div className="rounded-lg border bg-background px-4 py-3 text-center">🏭 Steel Production</div>
-                <div className="rounded-lg border bg-background px-4 py-3 text-center">⛏️ Mining</div>
-                <div className="rounded-lg border bg-background px-4 py-3 text-center">🛢️ Oil &amp; Gas</div>
-                <div className="rounded-lg border bg-background px-4 py-3 text-center">🔋 Power Generation</div>
-                <div className="rounded-lg border bg-background px-4 py-3 text-center">🚧 Construction</div>
-              </div>
-            </CardContent>
-          </Card>
+          <div className="p-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+              <div className="rounded-lg border bg-background px-4 py-3 text-center">🏭 Steel Production</div>
+              <div className="rounded-lg border bg-background px-4 py-3 text-center">⛏️ Mining</div>
+              <div className="rounded-lg border bg-background px-4 py-3 text-center">🛢️ Oil &amp; Gas</div>
+              <div className="rounded-lg border bg-background px-4 py-3 text-center">🔋 Power Generation</div>
+              <div className="rounded-lg border bg-background px-4 py-3 text-center">🚧 Construction</div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -357,14 +328,11 @@ export default function About() {
                 viewport={{ once: false, amount: 0.25 }}
                 whileHover={{ y: -3, scale: 1.02, transition: { type: "spring", stiffness: 360, damping: 18 } }}
                 transition={{ type: "spring", stiffness: 220, damping: 22, delay: i * 0.06 }}
+                className="p-6 text-center"
               >
-                <Card className="border-none shadow-none bg-transparent h-full rounded-none">
-                  <CardContent className="p-6 text-center">
-                    <v.icon className="h-10 w-10 text-primary mb-4 mx-auto" />
-                    <h3 className="font-bold mb-2">{v.title}</h3>
-                    <p className="text-muted-foreground">{v.desc}</p>
-                  </CardContent>
-                </Card>
+                <v.icon className="h-10 w-10 text-primary mb-4 mx-auto" />
+                <h3 className="font-bold mb-2">{v.title}</h3>
+                <p className="text-muted-foreground">{v.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -374,14 +342,12 @@ export default function About() {
       {/* Our Vision for the Future */}
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-8">
-          <Card className="border-none shadow-none bg-transparent rounded-none">
-            <CardContent className="p-10">
-              <h2 className="text-3xl font-bold tracking-tight mb-4 text-center">Our Vision for the Future</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed text-center">
-                As we look ahead, our mission remains clear: to provide innovative, reliable, and sustainable solutions that empower industries worldwide. We are committed to continuous improvement, investing in advanced technologies, and building partnerships that last.
-              </p>
-            </CardContent>
-          </Card>
+          <div className="p-10 text-center">
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Our Vision for the Future</h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              As we look ahead, our mission remains clear: to provide innovative, reliable, and sustainable solutions that empower industries worldwide. We are committed to continuous improvement, investing in advanced technologies, and building partnerships that last.
+            </p>
+          </div>
         </div>
       </section>
 
