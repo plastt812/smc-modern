@@ -94,17 +94,10 @@ export default function About() {
             <h2 className="text-3xl font-bold tracking-tight mb-6">Who We Are</h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Sanat Mansoor is a modern industrial manufacturer delivering high-quality components
-                and systems for aerospace, automotive, energy, and heavy industry.
+                Sanat Mansoor is a family-owned industrial company with a history dating back to 1948. From our early beginnings as a small engineering workshop, we have grown into a trusted partner for some of the most demanding industries in the world. Over the decades, we have successfully delivered more than 1,000 projects, building a reputation for reliability, precision, and innovation.
               </p>
               <p>
-                Our teams blend traditional craftsmanship with advanced automation, ensuring
-                repeatable quality at scale. We invest in people, process, and technology to solve
-                complex challenges with clarity and speed.
-              </p>
-              <p>
-                From prototype to production, we operate as an extension of your team—committed to
-                timelines, outcomes, and long-term success.
+                For over 50 years, we have worked alongside leaders in steel production, oil &amp; gas, mining, power generation, and construction. Each project has reinforced our commitment to engineering excellence and long-term partnerships. Today, Sanat Mansoor continues to combine tradition with innovation — delivering solutions that stand the test of time.
               </p>
             </div>
           </motion.div>
@@ -149,11 +142,9 @@ export default function About() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-3 gap-12 items-start">
           <div className="lg:col-span-2">
-            <h2 className="text-3xl font-bold tracking-tight mb-6">About Sanat Mansoor</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-6">Our Legacy</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Founded in 1948 as a family-owned company, Sanat Mansoor has grown into a recognized leader in
-              industrial engineering and manufacturing. With more than 1,000 projects successfully completed,
-              we combine decades of expertise with advanced technology to meet the toughest challenges.
+              For over 50 years, we have worked alongside leaders in steel production, oil &amp; gas, mining, power generation, and construction. Each project has reinforced our commitment to engineering excellence and long-term partnerships. Today, Sanat Mansoor continues to combine tradition with innovation — delivering solutions that stand the test of time.
             </p>
           </div>
           <Card className="border-0">
@@ -173,36 +164,65 @@ export default function About() {
 
       <section className="py-20 bg-muted/80">
         <div className="max-w-7xl mx-auto px-8">
-          <h2 className="text-3xl font-bold tracking-tight mb-6">Integrated Capabilities</h2>
+          <h2 className="text-3xl font-bold tracking-tight mb-6">Our Capabilities</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Our strength lies in the ability to integrate multiple disciplines under one roof:
+            We bring together a wide range of engineering and manufacturing expertise under one roof:
           </p>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="flex items-start gap-3">
               <CheckCircle className="h-5 w-5 text-primary mt-1" />
-              <span>Hydraulic system design and engineering</span>
+              <span>Hydraulic Engineering – Design and production of high-pressure systems.</span>
             </div>
             <div className="flex items-start gap-3">
               <CheckCircle className="h-5 w-5 text-primary mt-1" />
-              <span>Precision and large-piece machining</span>
+              <span>Precision &amp; Large-Piece Machining – Handling complex and oversized components.</span>
             </div>
             <div className="flex items-start gap-3">
               <CheckCircle className="h-5 w-5 text-primary mt-1" />
-              <span>Advanced casting through our Felez Taban foundry</span>
+              <span>Advanced Casting – Through our subsidiary Felez Taban, we produce critical parts with strength and reliability.</span>
             </div>
             <div className="flex items-start gap-3">
               <CheckCircle className="h-5 w-5 text-primary mt-1" />
-              <span>Certified welding and fabrication</span>
+              <span>Certified Welding &amp; Fabrication – Building durable assemblies that meet international standards.</span>
             </div>
             <div className="flex items-start gap-3">
               <CheckCircle className="h-5 w-5 text-primary mt-1" />
-              <span>Reverse engineering and spare parts supply</span>
+              <span>Reverse Engineering – Developing spare parts and systems to extend equipment life.</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <CheckCircle className="h-5 w-5 text-primary mt-1" />
+              <span>After-Sales Service – Ongoing support, maintenance, and spare parts supply.</span>
             </div>
           </div>
         </div>
       </section>
 
-      
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-8">
+          <h2 className="text-3xl font-bold tracking-tight mb-6">Our Brands</h2>
+          <p className="text-lg text-muted-foreground mb-6">
+            Sanat Mansoor operates through three specialized brands. Together, these brands enable us to deliver complete mechanical, hydraulic, and electrical solutions.
+          </p>
+          <div className="space-y-3 text-lg">
+            <div>• SAMIE – Heavy industrial equipment and custom machinery.</div>
+            <div>• POWERMAN – High-pressure hydraulic tools.</div>
+            <div>• SAMEE – Industrial electrical equipment.</div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-muted/80">
+        <div className="max-w-7xl mx-auto px-8">
+          <h2 className="text-3xl font-bold tracking-tight mb-6">Industries We Serve</h2>
+          <div className="space-y-3 text-lg">
+            <div>• 🏭 Steel Production</div>
+            <div>• ⛏️ Mining</div>
+            <div>• 🛢️ Oil &amp; Gas</div>
+            <div>• 🔋 Power Generation</div>
+            <div>• 🚧 Construction</div>
+          </div>
+        </div>
+      </section>
 
       {/* Values */}
       <section className="py-20 bg-muted/80">
@@ -234,33 +254,11 @@ export default function About() {
       {/* Milestones */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-8">
-          <h2 className="text-3xl font-bold tracking-tight mb-10 text-center">Milestones</h2>
-          <div className="grid md:grid-cols-5 gap-6">
-            {milestones.map((m, i) => (
-              <motion.div
-                key={m.year}
-                initial={{ y: 20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                viewport={{ once: false, amount: 0.25 }}
-                whileHover={{ y: -3, scale: 1.02, transition: { type: "spring", stiffness: 360, damping: 18 } }}
-                transition={{ type: "spring", stiffness: 220, damping: 22, delay: i * 0.05 }}
-              >
-                <Card className="border-0 h-full">
-                  <CardContent className="p-6 text-center">
-                    <div className="text-2xl font-bold text-primary mb-2">{m.year}</div>
-                    <p className="text-sm text-muted-foreground">{m.note}</p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }} className="inline-block">
-              <Button size="lg" onClick={() => navigate("/contact")} className="text-lg px-8 py-6">
-                Partner With Us <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </motion.div>
+          <h2 className="text-3xl font-bold tracking-tight mb-10 text-center">Our Vision for the Future</h2>
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              As we look ahead, our mission remains clear: to provide innovative, reliable, and sustainable solutions that empower industries worldwide. We are committed to continuous improvement, investing in advanced technologies, and building partnerships that last.
+            </p>
           </div>
         </div>
       </section>
