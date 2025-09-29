@@ -314,10 +314,6 @@ export default function About() {
                   <span className="text-base">🔋</span>
                   <span className="font-medium">Power Generation</span>
                 </span>
-                <span className="px-4 py-2 rounded-full border bg-background inline-flex items-center justify-center gap-2 sm:col-span-2">
-                  <span className="text-base">🚧</span>
-                  <span className="font-medium">Construction</span>
-                </span>
               </div>
             </motion.div>
 
@@ -328,11 +324,11 @@ export default function About() {
               transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.06 }}
               className="lg:col-span-6"
             >
-              <div className="aspect-[16/10] overflow-hidden">
+              <div className="aspect-[16/10] overflow-hidden rounded-2xl">
                 <img
                   src="https://harmless-tapir-303.convex.cloud/api/storage/f3606006-bd0d-4bac-bd45-c1bdf47d7b12"
                   alt="Industrial operations"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover rounded-2xl"
                   loading="lazy"
                 />
               </div>
