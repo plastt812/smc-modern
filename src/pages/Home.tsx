@@ -134,24 +134,28 @@ export default function Home() {
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl">
                 Sanat Mansoor (SMC) leads with over 1,000 groundbreaking projects across seven product segments.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  size="lg" 
-                  onClick={() => navigate("/contact")}
-                  className="text-lg px-8 py-6"
-                >
-                  Start Your Project
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-                <Button variant="outline" size="lg" className="text-lg px-8 py-6"
-                  // Smooth scroll to the Capabilities section
-                  onClick={() =>
-                    document.getElementById("capabilities")?.scrollIntoView({ behavior: "smooth" })
-                  }
-                >
-                  View Capabilities
-                </Button>
-              </div>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
+              <Button 
+                size="lg" 
+                onClick={() => navigate("/contact")}
+                className="text-lg px-8 py-6"
+              >
+                Start Your Project
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
+              <Button variant="outline" size="lg" className="text-lg px-8 py-6"
+                // Smooth scroll to the Capabilities section
+                onClick={() =>
+                  document.getElementById("capabilities")?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                View Capabilities
+              </Button>
+            </motion.div>
+          </div>
             </div>
           </div>
         </div>
@@ -169,6 +173,7 @@ export default function Home() {
                 key={stat.label}
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
+                viewport={{ once: true, amount: 0.25 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
@@ -362,6 +367,8 @@ export default function Home() {
                 key={feature.title}
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
+                viewport={{ once: true, amount: 0.25 }}
+                whileHover={{ y: -6, scale: 1.01 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
@@ -550,14 +557,16 @@ export default function Home() {
           </div>
 
           <div className="text-center">
-            <Button 
-              size="lg" 
-              onClick={() => navigate("/contact")}
-              className="text-lg px-8 py-6"
-            >
-              Get Started Today
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }} className="inline-block">
+              <Button 
+                size="lg" 
+                onClick={() => navigate("/contact")}
+                className="text-lg px-8 py-6"
+              >
+                Get Started Today
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </motion.div>
           </div>
         </div>
       </section>
