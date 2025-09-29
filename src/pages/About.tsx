@@ -400,27 +400,32 @@ export default function About() {
       {/* Our Core Values */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-8">
-          <h2 className="text-3xl font-bold tracking-tight mb-10 text-center">Our Core Values</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <h2 className="text-3xl font-bold tracking-tight mb-4 text-center">Our Core Values</h2>
+          <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10">
+            The principles that guide our engineering, partnerships, and long-term commitments.
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
             {values.map((v, i) => (
               <motion.div
                 key={v.title}
                 initial={{ y: 16, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: false, amount: 0.25 }}
-                whileHover={{ y: -3, scale: 1.02, transition: { type: "spring", stiffness: 360, damping: 18 } }}
+                whileHover={{ y: -3, scale: 1.01, transition: { type: "spring", stiffness: 360, damping: 18 } }}
                 transition={{ type: "spring", stiffness: 220, damping: 22, delay: i * 0.06 }}
               >
-                <Card className="h-full rounded-xl border bg-background/60 backdrop-blur-md ring-1 ring-border hover:ring-primary/40 transition-all shadow-sm">
-                  <CardContent className="p-8 text-center">
-                    <div className="h-1 w-16 bg-gradient-to-r from-primary to-primary/40 mx-auto mb-6 rounded-full" />
-                    <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-4">
-                      <v.icon className="h-10 w-10 text-primary" />
+                <div className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur-md p-6">
+                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
+                  <div className="flex items-start gap-4">
+                    <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3">
+                      <v.icon className="h-6 w-6 text-primary" />
                     </div>
-                    <h3 className="text-lg font-semibold mb-2">{v.title}</h3>
-                    <p className="text-sm text-muted-foreground">{v.desc}</p>
-                  </CardContent>
-                </Card>
+                    <div>
+                      <h3 className="text-lg font-semibold mb-1">{v.title}</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{v.desc}</p>
+                    </div>
+                  </div>
+                </div>
               </motion.div>
             ))}
           </div>
