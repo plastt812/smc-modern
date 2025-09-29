@@ -66,71 +66,103 @@ export default function About() {
         </div>
       </motion.nav>
 
-      {/* Hero */}
+      {/* Hero - cleaner and more focused */}
       <section className="p-0">
-        <div className="relative overflow-hidden min-h-[60vh] flex items-center justify-center">
+        <div className="relative overflow-hidden min-h-[56vh] flex items-center justify-center">
           <img
             src="https://harmless-tapir-303.convex.cloud/api/storage/2bbcab05-180d-460f-b184-519c9f98ac09"
             alt=""
             className="absolute inset-0 h-full w-full object-cover opacity-10 select-none pointer-events-none"
           />
-          <div className="relative z-10 px-6 text-center">
+          <div className="absolute inset-0 bg-background/30" />
+          <motion.div
+            initial={{ y: 18, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ type: "spring", stiffness: 220, damping: 22 }}
+            className="relative z-10 px-6 text-center max-w-3xl"
+          >
             <Badge variant="secondary" className="mb-4">About Us</Badge>
             <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-4">
               Engineering Excellence Since 1948
             </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground">
               We design, build, and deliver industrial solutions with a legacy of precision,
               innovation, and trusted partnerships.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Company Overview */}
+      {/* Who We Are + Key Metrics */}
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-3 gap-12 items-start">
-          <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="lg:col-span-2">
-            <h2 className="text-3xl font-bold tracking-tight mb-6">Who We Are</h2>
-            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-              <p>
-                Sanat Mansoor is a family-owned industrial company with a history dating back to 1948. From our early beginnings as a small engineering workshop, we have grown into a trusted partner for some of the most demanding industries in the world. Over the decades, we have successfully delivered more than 1,000 projects, building a reputation for reliability, precision, and innovation.
-              </p>
-              <p>
-                For over 50 years, we have worked alongside leaders in steel production, oil &amp; gas, mining, power generation, and construction. Each project has reinforced our commitment to engineering excellence and long-term partnerships. Today, Sanat Mansoor continues to combine tradition with innovation — delivering solutions that stand the test of time.
-              </p>
+        <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-12 gap-10 items-start">
+          <motion.div
+            initial={{ y: 16, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: false, amount: 0.25 }}
+            transition={{ type: "spring", stiffness: 220, damping: 22 }}
+            className="lg:col-span-7"
+          >
+            <div className="rounded-2xl border bg-card text-card-foreground shadow-sm">
+              <div className="p-8">
+                <h2 className="text-3xl font-bold tracking-tight mb-5">Who We Are</h2>
+                <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+                  <p>
+                    Sanat Mansoor is a family-owned industrial company with a history dating back to 1948. From our early beginnings as a small engineering workshop, we have grown into a trusted partner for some of the most demanding industries in the world. Over the decades, we have successfully delivered more than 1,000 projects, building a reputation for reliability, precision, and innovation.
+                  </p>
+                  <p>
+                    For over 50 years, we have worked alongside leaders in steel production, oil &amp; gas, mining, power generation, and construction. Each project has reinforced our commitment to engineering excellence and long-term partnerships. Today, Sanat Mansoor continues to combine tradition with innovation — delivering solutions that stand the test of time.
+                  </p>
+                </div>
+              </div>
             </div>
           </motion.div>
 
-          <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
-            <Card className="border-0">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex items-center gap-3">
-                  <Factory className="h-6 w-6 text-primary" />
-                  <div>
-                    <p className="text-sm text-muted-foreground">Facilities</p>
-                    <p className="font-semibold">3 global sites</p>
+          <motion.div
+            initial={{ y: 16, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: false, amount: 0.25 }}
+            transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.06 }}
+            className="lg:col-span-5"
+          >
+            <Card className="border-0 shadow-sm rounded-2xl">
+              <CardContent className="p-6">
+                <div className="grid grid-cols-2 gap-5">
+                  <div className="rounded-xl border bg-background p-4">
+                    <div className="flex items-center gap-3">
+                      <Factory className="h-6 w-6 text-primary" />
+                      <div>
+                        <p className="text-sm text-muted-foreground">Facilities</p>
+                        <p className="font-semibold">3 global sites</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Users className="h-6 w-6 text-primary" />
-                  <div>
-                    <p className="text-sm text-muted-foreground">Team</p>
-                    <p className="font-semibold">2,000+ experts</p>
+                  <div className="rounded-xl border bg-background p-4">
+                    <div className="flex items-center gap-3">
+                      <Users className="h-6 w-6 text-primary" />
+                      <div>
+                        <p className="text-sm text-muted-foreground">Team</p>
+                        <p className="font-semibold">2,000+ experts</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Clock className="h-6 w-6 text-primary" />
-                  <div>
-                    <p className="text-sm text-muted-foreground">On-Time Delivery</p>
-                    <p className="font-semibold">98.7%</p>
+                  <div className="rounded-xl border bg-background p-4">
+                    <div className="flex items-center gap-3">
+                      <Clock className="h-6 w-6 text-primary" />
+                      <div>
+                        <p className="text-sm text-muted-foreground">On-Time Delivery</p>
+                        <p className="font-semibold">98.7%</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Award className="h-6 w-6 text-primary" />
-                  <div>
-                    <p className="text-sm text-muted-foreground">Certifications</p>
-                    <p className="font-semibold">ISO 9001, ISO 14001</p>
+                  <div className="rounded-xl border bg-background p-4">
+                    <div className="flex items-center gap-3">
+                      <Award className="h-6 w-6 text-primary" />
+                      <div>
+                        <p className="text-sm text-muted-foreground">Certifications</p>
+                        <p className="font-semibold">ISO 9001, ISO 14001</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -139,108 +171,196 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-3 gap-12 items-start">
-          <div className="lg:col-span-2">
-            <h2 className="text-3xl font-bold tracking-tight mb-6">Our Legacy</h2>
+      {/* Our Legacy */}
+      <section className="py-20 relative">
+        <img
+          src="https://harmless-tapir-303.convex.cloud/api/storage/c750e4c6-3f16-4d0f-b8ad-89d9006d4740"
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover opacity-10 select-none pointer-events-none"
+        />
+        <div className="absolute inset-0 bg-background/40" />
+        <div className="relative max-w-7xl mx-auto px-8 grid lg:grid-cols-12 gap-10 items-center">
+          <motion.div
+            initial={{ x: -18, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: false, amount: 0.25 }}
+            transition={{ type: "spring", stiffness: 220, damping: 22 }}
+            className="lg:col-span-7"
+          >
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Our Legacy</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               For over 50 years, we have worked alongside leaders in steel production, oil &amp; gas, mining, power generation, and construction. Each project has reinforced our commitment to engineering excellence and long-term partnerships. Today, Sanat Mansoor continues to combine tradition with innovation — delivering solutions that stand the test of time.
             </p>
-          </div>
-          <Card className="border-0">
-            <CardContent className="p-6 space-y-3">
-              <div className="flex items-center gap-3">
-                <Gauge className="h-6 w-6 text-primary" />
-                <p className="text-sm text-muted-foreground">Since 1948 · 1,000+ projects</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <Cog className="h-6 w-6 text-primary" />
-                <p className="text-sm text-muted-foreground">Integrated engineering and manufacturing</p>
+          </motion.div>
+
+          <motion.div
+            initial={{ x: 18, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: false, amount: 0.25 }}
+            transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.06 }}
+            className="lg:col-span-5"
+          >
+            <Card className="border-0 shadow-sm rounded-2xl">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex items-center gap-3">
+                  <Gauge className="h-6 w-6 text-primary" />
+                  <p className="text-sm text-muted-foreground">Since 1948 · 1,000+ projects</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Cog className="h-6 w-6 text-primary" />
+                  <p className="text-sm text-muted-foreground">Integrated engineering and manufacturing</p>
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Our Capabilities */}
+      <section className="py-20 bg-muted/80">
+        <div className="max-w-7xl mx-auto px-8">
+          <motion.div
+            initial={{ y: 16, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: false, amount: 0.25 }}
+            transition={{ type: "spring", stiffness: 220, damping: 22 }}
+            className="text-center mb-10"
+          >
+            <h2 className="text-3xl font-bold tracking-tight mb-3">Our Capabilities</h2>
+            <p className="text-lg text-muted-foreground">
+              We bring together a wide range of engineering and manufacturing expertise under one roof:
+            </p>
+          </motion.div>
+
+          <Card className="border-0 shadow-sm rounded-2xl">
+            <CardContent className="p-8">
+              <div className="grid md:grid-cols-2 gap-5">
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-primary mt-1" />
+                  <span>Hydraulic Engineering – Design and production of high-pressure systems.</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-primary mt-1" />
+                  <span>Precision &amp; Large-Piece Machining – Handling complex and oversized components.</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-primary mt-1" />
+                  <span>Advanced Casting – Through our subsidiary Felez Taban, we produce critical parts with strength and reliability.</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-primary mt-1" />
+                  <span>Certified Welding &amp; Fabrication – Building durable assemblies that meet international standards.</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-primary mt-1" />
+                  <span>Reverse Engineering – Developing spare parts and systems to extend equipment life.</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-primary mt-1" />
+                  <span>After-Sales Service – Ongoing support, maintenance, and spare parts supply.</span>
+                </div>
               </div>
             </CardContent>
           </Card>
         </div>
       </section>
 
-      <section className="py-20 bg-muted/80">
-        <div className="max-w-7xl mx-auto px-8">
-          <h2 className="text-3xl font-bold tracking-tight mb-6">Our Capabilities</h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            We bring together a wide range of engineering and manufacturing expertise under one roof:
-          </p>
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="flex items-start gap-3">
-              <CheckCircle className="h-5 w-5 text-primary mt-1" />
-              <span>Hydraulic Engineering – Design and production of high-pressure systems.</span>
-            </div>
-            <div className="flex items-start gap-3">
-              <CheckCircle className="h-5 w-5 text-primary mt-1" />
-              <span>Precision &amp; Large-Piece Machining – Handling complex and oversized components.</span>
-            </div>
-            <div className="flex items-start gap-3">
-              <CheckCircle className="h-5 w-5 text-primary mt-1" />
-              <span>Advanced Casting – Through our subsidiary Felez Taban, we produce critical parts with strength and reliability.</span>
-            </div>
-            <div className="flex items-start gap-3">
-              <CheckCircle className="h-5 w-5 text-primary mt-1" />
-              <span>Certified Welding &amp; Fabrication – Building durable assemblies that meet international standards.</span>
-            </div>
-            <div className="flex items-start gap-3">
-              <CheckCircle className="h-5 w-5 text-primary mt-1" />
-              <span>Reverse Engineering – Developing spare parts and systems to extend equipment life.</span>
-            </div>
-            <div className="flex items-start gap-3">
-              <CheckCircle className="h-5 w-5 text-primary mt-1" />
-              <span>After-Sales Service – Ongoing support, maintenance, and spare parts supply.</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      {/* Our Brands */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-8">
-          <h2 className="text-3xl font-bold tracking-tight mb-6">Our Brands</h2>
-          <p className="text-lg text-muted-foreground mb-6">
-            Sanat Mansoor operates through three specialized brands. Together, these brands enable us to deliver complete mechanical, hydraulic, and electrical solutions.
-          </p>
-          <div className="space-y-3 text-lg">
-            <div>• SAMIE – Heavy industrial equipment and custom machinery.</div>
-            <div>• POWERMAN – High-pressure hydraulic tools.</div>
-            <div>• SAMEE – Industrial electrical equipment.</div>
+          <motion.div
+            initial={{ y: 16, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: false, amount: 0.25 }}
+            className="text-center mb-10"
+          >
+            <h2 className="text-3xl font-bold tracking-tight mb-3">Our Brands</h2>
+            <p className="text-lg text-muted-foreground">
+              Sanat Mansoor operates through three specialized brands. Together, these brands enable us to deliver complete mechanical, hydraulic, and electrical solutions.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <motion.div whileHover={{ y: -3, scale: 1.02 }} transition={{ type: "spring", stiffness: 360, damping: 18 }}>
+              <Card className="border-0 shadow-sm h-full rounded-2xl">
+                <CardContent className="p-6">
+                  <h3 className="font-bold mb-2">SAMIE</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Heavy industrial equipment and custom machinery.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+            <motion.div whileHover={{ y: -3, scale: 1.02 }} transition={{ type: "spring", stiffness: 360, damping: 18 }}>
+              <Card className="border-0 shadow-sm h-full rounded-2xl">
+                <CardContent className="p-6">
+                  <h3 className="font-bold mb-2">POWERMAN</h3>
+                  <p className="text-sm text-muted-foreground">
+                    High-pressure hydraulic tools.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+            <motion.div whileHover={{ y: -3, scale: 1.02 }} transition={{ type: "spring", stiffness: 360, damping: 18 }}>
+              <Card className="border-0 shadow-sm h-full rounded-2xl">
+                <CardContent className="p-6">
+                  <h3 className="font-bold mb-2">SAMEE</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Industrial electrical equipment.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
           </div>
         </div>
       </section>
 
+      {/* Industries We Serve */}
       <section className="py-20 bg-muted/80">
         <div className="max-w-7xl mx-auto px-8">
-          <h2 className="text-3xl font-bold tracking-tight mb-6">Industries We Serve</h2>
-          <div className="space-y-3 text-lg">
-            <div>• 🏭 Steel Production</div>
-            <div>• ⛏️ Mining</div>
-            <div>• 🛢️ Oil &amp; Gas</div>
-            <div>• 🔋 Power Generation</div>
-            <div>• 🚧 Construction</div>
-          </div>
+          <motion.div
+            initial={{ y: 16, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: false, amount: 0.25 }}
+            className="mb-8"
+          >
+            <h2 className="text-3xl font-bold tracking-tight mb-3">Industries We Serve</h2>
+            <p className="text-muted-foreground">
+              Our products and services are trusted in industries where performance is critical:
+            </p>
+          </motion.div>
+
+          <Card className="border-0 shadow-sm rounded-2xl">
+            <CardContent className="p-6">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                <div className="rounded-lg border bg-background px-4 py-3 text-center">🏭 Steel Production</div>
+                <div className="rounded-lg border bg-background px-4 py-3 text-center">⛏️ Mining</div>
+                <div className="rounded-lg border bg-background px-4 py-3 text-center">🛢️ Oil &amp; Gas</div>
+                <div className="rounded-lg border bg-background px-4 py-3 text-center">🔋 Power Generation</div>
+                <div className="rounded-lg border bg-background px-4 py-3 text-center">🚧 Construction</div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
-      {/* Values */}
-      <section className="py-20 bg-muted/80">
+      {/* Our Core Values */}
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-8">
           <h2 className="text-3xl font-bold tracking-tight mb-10 text-center">Our Core Values</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {values.map((v, i) => (
-                <motion.div
-                  key={v.title}
-                  initial={{ y: 20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  viewport={{ once: false, amount: 0.25 }}
-                  whileHover={{ y: -3, scale: 1.02, transition: { type: "spring", stiffness: 360, damping: 18 } }}
-                  transition={{ type: "spring", stiffness: 220, damping: 22, delay: i * 0.06 }}
-                >
-                <Card className="border-0 h-full">
-                  <CardContent className="p-6">
-                    <v.icon className="h-10 w-10 text-primary mb-4" />
+            {values.map((v, i) => (
+              <motion.div
+                key={v.title}
+                initial={{ y: 16, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: false, amount: 0.25 }}
+                whileHover={{ y: -3, scale: 1.02, transition: { type: "spring", stiffness: 360, damping: 18 } }}
+                transition={{ type: "spring", stiffness: 220, damping: 22, delay: i * 0.06 }}
+              >
+                <Card className="border-0 h-full rounded-2xl">
+                  <CardContent className="p-6 text-center">
+                    <v.icon className="h-10 w-10 text-primary mb-4 mx-auto" />
                     <h3 className="font-bold mb-2">{v.title}</h3>
                     <p className="text-muted-foreground">{v.desc}</p>
                   </CardContent>
@@ -251,15 +371,17 @@ export default function About() {
         </div>
       </section>
 
-      {/* Milestones */}
+      {/* Our Vision for the Future */}
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-8">
-          <h2 className="text-3xl font-bold tracking-tight mb-10 text-center">Our Vision for the Future</h2>
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              As we look ahead, our mission remains clear: to provide innovative, reliable, and sustainable solutions that empower industries worldwide. We are committed to continuous improvement, investing in advanced technologies, and building partnerships that last.
-            </p>
-          </div>
+        <div className="max-w-5xl mx-auto px-8">
+          <Card className="border-0 shadow-sm rounded-2xl">
+            <CardContent className="p-10">
+              <h2 className="text-3xl font-bold tracking-tight mb-4 text-center">Our Vision for the Future</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed text-center">
+                As we look ahead, our mission remains clear: to provide innovative, reliable, and sustainable solutions that empower industries worldwide. We are committed to continuous improvement, investing in advanced technologies, and building partnerships that last.
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
