@@ -488,6 +488,10 @@ export default function Home() {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: false, amount: 0.3 }}
+              whileHover={{ y: -3, scale: 1.02, transition: { type: "spring", stiffness: 360, damping: 18 } }}
+              whileTap={{ scale: 0.98 }}
             >
               <Card className="border-0 shadow-sm">
                 <CardContent className="p-8 text-center">
