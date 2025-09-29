@@ -377,12 +377,21 @@ export default function About() {
       </section>
 
       {/* Our Vision for the Future */}
-      <section className="py-20">
-        <div className="max-w-5xl mx-auto px-8">
+      <section className="py-20 relative">
+        {/* Background image */}
+        <img
+          src="https://harmless-tapir-303.convex.cloud/api/storage/289473bd-0e30-4a18-b01a-07e942298152"
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover opacity-20 select-none pointer-events-none"
+        />
+        <div className="absolute inset-0 bg-background/40" />
+        <div className="relative z-10 max-w-5xl mx-auto px-8">
           <div className="p-10 text-center">
             <h2 className="text-3xl font-bold tracking-tight mb-4">Our Vision for the Future</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              As we look ahead, our mission remains clear: to provide innovative, reliable, and sustainable solutions that empower industries worldwide. We are committed to continuous improvement, investing in advanced technologies, and building partnerships that last.
+              As we look ahead, our mission remains clear: to provide innovative, reliable, and sustainable
+              solutions that empower industries worldwide. We are committed to continuous improvement,
+              investing in advanced technologies, and building partnerships that last.
             </p>
           </div>
         </div>
