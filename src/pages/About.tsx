@@ -343,7 +343,8 @@ export default function About() {
       {/* Industries We Serve */}
       <section className="py-20 bg-muted/80">
         <div className="max-w-7xl mx-auto px-8">
-          <div className="grid lg:grid-cols-12 gap-10 items-center">
+          <div className="grid sm:grid-cols-2 gap-10 items-center">
+            {/* Left column with heading, description, and pills */}
             <motion.div
               initial={{ x: -18, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -357,26 +358,27 @@ export default function About() {
                 we deliver systems engineered to endure.
               </p>
 
-              <div className="grid sm:grid-cols-2 gap-3">
-                <span className="px-4 py-2 rounded-full border bg-background inline-flex items-center justify-center gap-2">
-                  <span className="text-base">🏭</span>
-                  <span className="font-medium">Steel Production</span>
+              <div className="grid sm:grid-cols-2 gap-5">
+                <span className="px-6 py-3 rounded-full border bg-background inline-flex items-center justify-center gap-3 text-base lg:text-lg">
+                  <span className="text-xl lg:text-2xl">🏭</span>
+                  <span className="font-semibold">Steel Production</span>
                 </span>
-                <span className="px-4 py-2 rounded-full border bg-background inline-flex items-center justify-center gap-2">
-                  <span className="text-base">⛏️</span>
-                  <span className="font-medium">Mining</span>
+                <span className="px-6 py-3 rounded-full border bg-background inline-flex items-center justify-center gap-3 text-base lg:text-lg">
+                  <span className="text-xl lg:text-2xl">⛏️</span>
+                  <span className="font-semibold">Mining</span>
                 </span>
-                <span className="px-4 py-2 rounded-full border bg-background inline-flex items-center justify-center gap-2">
-                  <span className="text-base">🛢️</span>
-                  <span className="font-medium">Oil &amp; Gas</span>
+                <span className="px-6 py-3 rounded-full border bg-background inline-flex items-center justify-center gap-3 text-base lg:text-lg">
+                  <span className="text-xl lg:text-2xl">🛢️</span>
+                  <span className="font-semibold">Oil &amp; Gas</span>
                 </span>
-                <span className="px-4 py-2 rounded-full border bg-background inline-flex items-center justify-center gap-2">
-                  <span className="text-base">🔋</span>
-                  <span className="font-medium">Power Generation</span>
+                <span className="px-6 py-3 rounded-full border bg-background inline-flex items-center justify-center gap-3 text-base lg:text-lg">
+                  <span className="text-xl lg:text-2xl">🔋</span>
+                  <span className="font-semibold">Power Generation</span>
                 </span>
               </div>
             </motion.div>
 
+            {/* Right column with image stays the same */}
             <motion.div
               initial={{ x: 18, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
