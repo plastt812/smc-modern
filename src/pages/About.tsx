@@ -203,7 +203,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Our Capabilities */}
+      {/* Featured Projects (replaces: Our Capabilities + Our Brands) */}
       <section className="py-20 bg-muted/80">
         <div className="max-w-7xl mx-auto px-8">
           <motion.div
@@ -211,128 +211,81 @@ export default function About() {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: false, amount: 0.25 }}
             transition={{ type: "spring", stiffness: 220, damping: 22 }}
-            className="text-center mb-10"
-          >
-            <h2 className="text-3xl font-bold tracking-tight mb-3">Our Capabilities</h2>
-            <p className="text-lg text-muted-foreground">
-              We bring together a wide range of engineering and manufacturing expertise under one roof:
-            </p>
-          </motion.div>
-
-          <div className="p-8 max-w-4xl mx-auto">
-            <div className="relative border-l pl-6 space-y-5">
-              <div className="absolute left-0 top-0 bottom-0 border-l" />
-              <div className="relative">
-                <span className="absolute -left-3.5 top-1.5 h-2.5 w-2.5 rounded-full bg-primary" />
-                <p><span className="font-semibold">Hydraulic Engineering</span> — <span className="text-muted-foreground">Design and production of high-pressure systems.</span></p>
-              </div>
-              <div className="relative">
-                <span className="absolute -left-3.5 top-1.5 h-2.5 w-2.5 rounded-full bg-primary" />
-                <p><span className="font-semibold">Precision &amp; Large-Piece Machining</span> — <span className="text-muted-foreground">Handling complex and oversized components.</span></p>
-              </div>
-              <div className="relative">
-                <span className="absolute -left-3.5 top-1.5 h-2.5 w-2.5 rounded-full bg-primary" />
-                <p><span className="font-semibold">Advanced Casting</span> — <span className="text-muted-foreground">Through our subsidiary Felez Taban, we produce critical parts with strength and reliability.</span></p>
-              </div>
-              <div className="relative">
-                <span className="absolute -left-3.5 top-1.5 h-2.5 w-2.5 rounded-full bg-primary" />
-                <p><span className="font-semibold">Certified Welding &amp; Fabrication</span> — <span className="text-muted-foreground">Building durable assemblies that meet international standards.</span></p>
-              </div>
-              <div className="relative">
-                <span className="absolute -left-3.5 top-1.5 h-2.5 w-2.5 rounded-full bg-primary" />
-                <p><span className="font-semibold">Reverse Engineering</span> — <span className="text-muted-foreground">Developing spare parts and systems to extend equipment life.</span></p>
-              </div>
-              <div className="relative">
-                <span className="absolute -left-3.5 top-1.5 h-2.5 w-2.5 rounded-full bg-primary" />
-                <p><span className="font-semibold">After-Sales Service</span> — <span className="text-muted-foreground">Ongoing support, maintenance, and spare parts supply.</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Brands */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-8">
-          <motion.div
-            initial={{ y: 16, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: false, amount: 0.25 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold tracking-tight mb-3">Our Brands</h2>
-            <p className="text-lg text-muted-foreground">
-              Three specialized brands deliver end‑to‑end industrial solutions across heavy equipment,
-              high‑pressure hydraulics, and electrical systems.
+            <h2 className="text-3xl font-bold tracking-tight mb-3">Featured Projects</h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              A snapshot of recent, high‑impact engagements across steel, energy, and mining—delivered with
+              precision and measurable results.
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* SAMIE */}
             <motion.div
               initial={{ y: 16, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: false, amount: 0.25 }}
-              whileHover={{ y: -4, scale: 1.01, transition: { type: "spring", stiffness: 360, damping: 18 } }}
               transition={{ type: "spring", stiffness: 220, damping: 22 }}
             >
               <Card className="h-full rounded-xl border bg-background/60 backdrop-blur-md ring-1 ring-border hover:ring-primary/40 transition-all shadow-sm">
-                <CardContent className="p-8 text-center">
-                  <img
-                    src="https://harmless-tapir-303.convex.cloud/api/storage/e7220248-19c5-4689-8607-7b0341910b7e"
-                    alt="SAMIE logo"
-                    className="h-10 w-auto mx-auto mb-4 object-contain"
-                    loading="lazy"
-                  />
-                  <h3 className="text-lg font-semibold mb-1">SAMIE</h3>
-                  <p className="text-sm text-muted-foreground mb-4">Heavy Industrial Equipment</p>
-                  <div className="h-1 w-16 bg-gradient-to-r from-primary to-primary/40 mx-auto rounded-full" />
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Wrench className="h-6 w-6 text-primary" />
+                    <h3 className="font-semibold">Steel Mill Retrofit</h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    HPGR integration and bearing redesign to increase throughput and reduce downtime.
+                  </p>
+                  <ul className="mt-4 space-y-2 text-sm">
+                    <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-primary mt-0.5" /> +12% line capacity</li>
+                    <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-primary mt-0.5" /> 18% maintenance reduction</li>
+                  </ul>
                 </CardContent>
               </Card>
             </motion.div>
 
-            {/* POWERMAN */}
             <motion.div
               initial={{ y: 16, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: false, amount: 0.25 }}
-              whileHover={{ y: -4, scale: 1.01, transition: { type: "spring", stiffness: 360, damping: 18 } }}
               transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.06 }}
             >
               <Card className="h-full rounded-xl border bg-background/60 backdrop-blur-md ring-1 ring-border hover:ring-primary/40 transition-all shadow-sm">
-                <CardContent className="p-8 text-center">
-                  <img
-                    src="https://harmless-tapir-303.convex.cloud/api/storage/710bd358-735e-4966-b819-effdc9610938"
-                    alt="POWERMAN logo"
-                    className="h-10 w-auto mx-auto mb-4 object-contain"
-                    loading="lazy"
-                  />
-                  <h3 className="text-lg font-semibold mb-1">POWERMAN</h3>
-                  <p className="text-sm text-muted-foreground mb-4">High‑Pressure Hydraulic Tools</p>
-                  <div className="h-1 w-16 bg-gradient-to-r from-primary to-primary/40 mx-auto rounded-full" />
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Plug className="h-6 w-6 text-primary" />
+                    <h3 className="font-semibold">Offshore Hydraulic Overhaul</h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    High‑pressure systems upgrade with redundancy and safety interlocks.
+                  </p>
+                  <ul className="mt-4 space-y-2 text-sm">
+                    <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-primary mt-0.5" /> 700 bar certified</li>
+                    <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-primary mt-0.5" /> Zero unplanned shutdowns</li>
+                  </ul>
                 </CardContent>
               </Card>
             </motion.div>
 
-            {/* SAMEE */}
             <motion.div
               initial={{ y: 16, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: false, amount: 0.25 }}
-              whileHover={{ y: -4, scale: 1.01, transition: { type: "spring", stiffness: 360, damping: 18 } }}
               transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.12 }}
             >
               <Card className="h-full rounded-xl border bg-background/60 backdrop-blur-md ring-1 ring-border hover:ring-primary/40 transition-all shadow-sm">
-                <CardContent className="p-8 text-center">
-                  <img
-                    src="https://harmless-tapir-303.convex.cloud/api/storage/3a72f77b-550f-4ecc-a660-ecb8d3851593"
-                    alt="SAMEE logo"
-                    className="h-10 w-auto mx-auto mb-4 object-contain"
-                    loading="lazy"
-                  />
-                  <h3 className="text-lg font-semibold mb-1">SAMEE</h3>
-                  <p className="text-sm text-muted-foreground mb-4">Electrical Equipment</p>
-                  <div className="h-1 w-16 bg-gradient-to-r from-primary to-primary/40 mx-auto rounded-full" />
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Gauge className="h-6 w-6 text-primary" />
+                    <h3 className="font-semibold">Power Plant Alignment</h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Precision alignment and vibration mitigation for turbine assemblies.
+                  </p>
+                  <ul className="mt-4 space-y-2 text-sm">
+                    <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-primary mt-0.5" /> 99.9% uptime</li>
+                    <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-primary mt-0.5" /> ISO 9001 compliant</li>
+                  </ul>
                 </CardContent>
               </Card>
             </motion.div>
