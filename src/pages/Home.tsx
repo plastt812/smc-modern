@@ -332,7 +332,7 @@ export default function Home() {
                 <img
                   src="https://harmless-tapir-303.convex.cloud/api/storage/aa6ce926-4b60-4467-8030-6d8c769b00a8"
                   alt="Industrial operations"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover rounded-2xl"
                   loading="lazy"
                 />
               </div>
