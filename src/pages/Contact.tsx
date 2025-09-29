@@ -75,7 +75,11 @@ export default function Contact() {
       {/* Content */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-8 mb-8">
-          <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: false, amount: 0.25 }}
+          >
             <h2 className="text-3xl font-bold tracking-tight mb-4">
               Get in Touch with Sanat Mansoor
             </h2>
@@ -94,7 +98,8 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-3 gap-10 items-start">
           <motion.div
             initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: false, amount: 0.25 }}
             className="lg:col-span-2 self-start"
           >
             <Card className="border-0">
@@ -117,10 +122,12 @@ export default function Contact() {
                     <Textarea name="message" placeholder="Tell us about your project..." rows={6} required />
                   </div>
                   <div className="sm:col-span-2">
-                    <Button type="submit" className="px-8">
-                      Send Message
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
+                    <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="inline-block">
+                      <Button type="submit" className="px-8">
+                        Send Message
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </motion.div>
                   </div>
                 </form>
               </CardContent>
@@ -129,7 +136,8 @@ export default function Contact() {
 
           <motion.div
             initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: false, amount: 0.25 }}
             transition={{ delay: 0.1 }}
             className="space-y-6 self-start"
           >
@@ -175,7 +183,11 @@ export default function Contact() {
 
         {/* Map Section */}
         <div className="max-w-7xl mx-auto px-8 mt-12 space-y-4">
-          <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: false, amount: 0.25 }}
+          >
             <h2 className="text-2xl font-bold tracking-tight">Find Us Easily</h2>
             <p className="text-muted-foreground">
               Located within the Isfahan Province, SMC benefits from strategic partnerships that enhance our

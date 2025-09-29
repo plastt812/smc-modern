@@ -86,8 +86,10 @@ export default function Catalogs() {
               <motion.div
                 key={c.title}
                 initial={{ y: 16, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: i * 0.06 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: false, amount: 0.25 }}
+                whileHover={{ y: -3, scale: 1.02, transition: { type: "spring", stiffness: 360, damping: 18 } }}
+                transition={{ type: "spring", stiffness: 220, damping: 22, delay: i * 0.06 }}
               >
                 <Card className="border-0 shadow-sm h-full">
                   <CardContent className="p-6 flex flex-col gap-4">
@@ -123,9 +125,11 @@ export default function Catalogs() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Button variant="outline" onClick={() => navigate("/contact")}>
-              Need a specific catalog? Contact our team
-            </Button>
+            <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="inline-block">
+              <Button variant="outline" onClick={() => navigate("/contact")}>
+                Need a specific catalog? Contact our team
+              </Button>
+            </motion.div>
           </div>
         </div>
       </section>

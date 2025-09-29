@@ -208,13 +208,15 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-8">
           <h2 className="text-3xl font-bold tracking-tight mb-10 text-center">Our Core Values</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((v, i) => (
-              <motion.div
-                key={v.title}
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: i * 0.06 }}
-              >
+              {values.map((v, i) => (
+                <motion.div
+                  key={v.title}
+                  initial={{ y: 20, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: false, amount: 0.25 }}
+                  whileHover={{ y: -3, scale: 1.02, transition: { type: "spring", stiffness: 360, damping: 18 } }}
+                  transition={{ type: "spring", stiffness: 220, damping: 22, delay: i * 0.06 }}
+                >
                 <Card className="border-0 h-full">
                   <CardContent className="p-6">
                     <v.icon className="h-10 w-10 text-primary mb-4" />
@@ -237,8 +239,10 @@ export default function About() {
               <motion.div
                 key={m.year}
                 initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: i * 0.05 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: false, amount: 0.25 }}
+                whileHover={{ y: -3, scale: 1.02, transition: { type: "spring", stiffness: 360, damping: 18 } }}
+                transition={{ type: "spring", stiffness: 220, damping: 22, delay: i * 0.05 }}
               >
                 <Card className="border-0 h-full">
                   <CardContent className="p-6 text-center">
@@ -251,9 +255,11 @@ export default function About() {
           </div>
 
           <div className="text-center mt-12">
-            <Button size="lg" onClick={() => navigate("/contact")} className="text-lg px-8 py-6">
-              Partner With Us <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }} className="inline-block">
+              <Button size="lg" onClick={() => navigate("/contact")} className="text-lg px-8 py-6">
+                Partner With Us <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </motion.div>
           </div>
         </div>
       </section>
