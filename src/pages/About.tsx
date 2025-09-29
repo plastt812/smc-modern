@@ -351,9 +351,12 @@ export default function About() {
                 whileHover={{ y: -3, scale: 1.02, transition: { type: "spring", stiffness: 360, damping: 18 } }}
                 transition={{ type: "spring", stiffness: 220, damping: 22, delay: i * 0.06 }}
               >
-                <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
+                <Card className="h-full rounded-xl border bg-background/60 backdrop-blur-md ring-1 ring-border hover:ring-primary/40 transition-all shadow-sm">
                   <CardContent className="p-8 text-center">
-                    <v.icon className="h-12 w-12 text-primary mb-4 mx-auto" />
+                    <div className="h-1 w-16 bg-gradient-to-r from-primary to-primary/40 mx-auto mb-6 rounded-full" />
+                    <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-4">
+                      <v.icon className="h-10 w-10 text-primary" />
+                    </div>
                     <h3 className="text-lg font-semibold mb-2">{v.title}</h3>
                     <p className="text-sm text-muted-foreground">{v.desc}</p>
                   </CardContent>
