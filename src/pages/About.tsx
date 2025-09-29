@@ -94,7 +94,14 @@ export default function About() {
       </section>
 
       {/* Who We Are + Key Metrics */}
-      <section className="py-20">
+      <section className="py-20 relative overflow-hidden">
+        {/* Background image for this section */}
+        <img
+          src="https://harmless-tapir-303.convex.cloud/api/storage/a6328693-c5bd-4101-b30e-525f12aaa989"
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover opacity-10 select-none pointer-events-none"
+        />
+        <div className="absolute inset-0 bg-background/30" />
         <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-12 gap-12 items-start">
           {/* Left: Who we are */}
           <motion.div
@@ -112,7 +119,6 @@ export default function About() {
               <p className="text-base text-muted-foreground mb-6">
                 Precision manufacturing, integrated engineering, and long-term partnerships across the world's most demanding industries.
               </p>
-
               {/* Editorial rail */}
               <div className="border-l pl-6 space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
@@ -124,7 +130,6 @@ export default function About() {
               </div>
             </div>
           </motion.div>
-
           {/* Right: Key metrics */}
           <motion.div
             initial={{ y: 16, opacity: 0 }}
