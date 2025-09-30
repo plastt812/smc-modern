@@ -521,9 +521,12 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-background/40" />
         <div className="relative z-10 max-w-7xl mx-auto px-8">
+          {/* Section intro animations */}
           <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+            initial={{ y: 24, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: false, amount: 0.25 }}
+            transition={{ type: "spring", stiffness: 220, damping: 22 }}
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold tracking-tight mb-4">
@@ -534,34 +537,65 @@ export default function Home() {
             </p>
           </motion.div>
 
+          {/* Staggered cards */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Card className="border border-white/20 bg-background/40 backdrop-blur-md">
-              <CardContent className="p-8 text-center">
-                <Phone className="h-8 w-8 text-primary mx-auto mb-4" />
-                <h3 className="font-bold mb-2">Call Us</h3>
-                <p className="text-muted-foreground">+1 (555) 123-4567</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="border border-white/20 bg-background/40 backdrop-blur-md">
-              <CardContent className="p-8 text-center">
-                <Mail className="h-8 w-8 text-primary mx-auto mb-4" />
-                <h3 className="font-bold mb-2">Email Us</h3>
-                <p className="text-muted-foreground">info@sanatmansoor.com</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="border border-white/20 bg-background/40 backdrop-blur-md">
-              <CardContent className="p-8 text-center">
-                <MapPin className="h-8 w-8 text-primary mx-auto mb-4" />
-                <h3 className="font-bold mb-2">Visit Us</h3>
-                <p className="text-muted-foreground">#78, 9th Street, Oshtorjan Industrial City, Isfahan Province, Iran</p>
-              </CardContent>
-            </Card>
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ type: "spring", stiffness: 240, damping: 20, delay: 0.02 }}
+            >
+              <Card className="border border-white/20 bg-background/40 backdrop-blur-md">
+                <CardContent className="p-8 text-center">
+                  <Phone className="h-8 w-8 text-primary mx-auto mb-4" />
+                  <h3 className="font-bold mb-2">Call Us</h3>
+                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ type: "spring", stiffness: 240, damping: 20, delay: 0.12 }}
+            >
+              <Card className="border border-white/20 bg-background/40 backdrop-blur-md">
+                <CardContent className="p-8 text-center">
+                  <Mail className="h-8 w-8 text-primary mx-auto mb-4" />
+                  <h3 className="font-bold mb-2">Email Us</h3>
+                  <p className="text-muted-foreground">info@sanatmansoor.com</p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ type: "spring", stiffness: 240, damping: 20, delay: 0.22 }}
+            >
+              <Card className="border border-white/20 bg-background/40 backdrop-blur-md">
+                <CardContent className="p-8 text-center">
+                  <MapPin className="h-8 w-8 text-primary mx-auto mb-4" />
+                  <h3 className="font-bold mb-2">Visit Us</h3>
+                  <p className="text-muted-foreground">#78, 9th Street, Oshtorjan Industrial City, Isfahan Province, Iran</p>
+                </CardContent>
+              </Card>
+            </motion.div>
           </div>
 
+          {/* CTA button with interaction */}
           <div className="text-center">
-            <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }} className="inline-block">
+            <motion.div
+              initial={{ scale: 0.98, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ type: "spring", stiffness: 260, damping: 18, delay: 0.1 }}
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.98 }}
+              className="inline-block"
+            >
               <Button 
                 size="lg" 
                 onClick={() => navigate("/contact")}
