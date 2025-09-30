@@ -545,8 +545,8 @@ export default function Home() {
               viewport={{ once: false, amount: 0.2 }}
               transition={{ type: "spring", stiffness: 240, damping: 20, delay: 0.02 }}
             >
-              <Card className="border border-white/20 bg-background/40 backdrop-blur-md">
-                <CardContent className="p-8 text-center">
+              <Card className="h-full border border-white/20 bg-background/40 backdrop-blur-md">
+                <CardContent className="p-8 h-full flex flex-col items-center justify-center text-center">
                   <Phone className="h-8 w-8 text-primary mx-auto mb-4" />
                   <h3 className="font-bold mb-2">Call Us</h3>
                   <p className="text-muted-foreground">+1 (555) 123-4567</p>
@@ -560,8 +560,8 @@ export default function Home() {
               viewport={{ once: false, amount: 0.2 }}
               transition={{ type: "spring", stiffness: 240, damping: 20, delay: 0.12 }}
             >
-              <Card className="border border-white/20 bg-background/40 backdrop-blur-md">
-                <CardContent className="p-8 text-center">
+              <Card className="h-full border border-white/20 bg-background/40 backdrop-blur-md">
+                <CardContent className="p-8 h-full flex flex-col items-center justify-center text-center">
                   <Mail className="h-8 w-8 text-primary mx-auto mb-4" />
                   <h3 className="font-bold mb-2">Email Us</h3>
                   <p className="text-muted-foreground">info@sanatmansoor.com</p>
@@ -575,8 +575,8 @@ export default function Home() {
               viewport={{ once: false, amount: 0.2 }}
               transition={{ type: "spring", stiffness: 240, damping: 20, delay: 0.22 }}
             >
-              <Card className="border border-white/20 bg-background/40 backdrop-blur-md">
-                <CardContent className="p-8 text-center">
+              <Card className="h-full border border-white/20 bg-background/40 backdrop-blur-md">
+                <CardContent className="p-8 h-full flex flex-col items-center justify-center text-center">
                   <MapPin className="h-8 w-8 text-primary mx-auto mb-4" />
                   <h3 className="font-bold mb-2">Visit Us</h3>
                   <p className="text-muted-foreground">#78, 9th Street, Oshtorjan Industrial City, Isfahan Province, Iran</p>
