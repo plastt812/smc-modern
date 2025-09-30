@@ -539,20 +539,27 @@ export default function Home() {
 
           {/* Staggered cards */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
+
+
+
+          
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: false, amount: 0.2 }}
               transition={{ type: "spring", stiffness: 240, damping: 20, delay: 0.02 }}
             >
-              <Card className="h-full border border-white/20 bg-background/40 backdrop-blur-md">
+              <Card className="h-full border border-white/20 bg-background/70 backdrop-blur-mda">
                 <CardContent className="p-8 h-full flex flex-col items-center justify-center text-center">
-                  <Phone className="h-8 w-8 text-primary mx-auto mb-4" />
+                  <Phone className="h-12 w-12 text-primary mx-auto mb-4" />
                   <h3 className="font-bold mb-2">Call Us</h3>
                   <p className="text-muted-foreground">+1 (555) 123-4567</p>
                 </CardContent>
               </Card>
             </motion.div>
+
+
+
 
             <motion.div
               initial={{ y: 20, opacity: 0 }}
@@ -560,14 +567,17 @@ export default function Home() {
               viewport={{ once: false, amount: 0.2 }}
               transition={{ type: "spring", stiffness: 240, damping: 20, delay: 0.12 }}
             >
-              <Card className="h-full border border-white/20 bg-background/40 backdrop-blur-md">
+              <Card className="h-full border border-white/20 bg-background/70 backdrop-blur-mda">
                 <CardContent className="p-8 h-full flex flex-col items-center justify-center text-center">
-                  <Mail className="h-8 w-8 text-primary mx-auto mb-4" />
+                  <Mail className="h-12 w-12 text-primary mx-auto mb-4" />
                   <h3 className="font-bold mb-2">Email Us</h3>
                   <p className="text-muted-foreground">info@sanatmansoor.com</p>
                 </CardContent>
               </Card>
             </motion.div>
+
+
+
 
             <motion.div
               initial={{ y: 20, opacity: 0 }}
@@ -575,14 +585,17 @@ export default function Home() {
               viewport={{ once: false, amount: 0.2 }}
               transition={{ type: "spring", stiffness: 240, damping: 20, delay: 0.22 }}
             >
-              <Card className="h-full border border-white/20 bg-background/40 backdrop-blur-md">
+              <Card className="h-full border border-white/20 bg-background/70 backdrop-blur-mda">
                 <CardContent className="p-8 h-full flex flex-col items-center justify-center text-center">
-                  <MapPin className="h-8 w-8 text-primary mx-auto mb-4" />
+                  <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
                   <h3 className="font-bold mb-2">Visit Us</h3>
                   <p className="text-muted-foreground">#78, 9th Street, Oshtorjan Industrial City, Isfahan Province, Iran</p>
                 </CardContent>
               </Card>
             </motion.div>
+
+
+
           </div>
 
           {/* CTA button with interaction */}
