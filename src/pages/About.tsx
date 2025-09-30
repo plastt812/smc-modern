@@ -20,6 +20,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import { Phone, Mail, MapPin } from "lucide-react";
+import { Calendar } from "lucide-react";
 
 export default function About() {
   const navigate = useNavigate();
@@ -137,8 +138,8 @@ export default function About() {
               <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Key Metrics</h3>
               <div className="grid sm:grid-cols-2 gap-3">
                 <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border bg-background/60 backdrop-blur">
-                  <Factory className="h-5 w-5 text-primary" />
-                  <span className="text-sm"><span className="font-semibold">Facilities:</span> 3 global sites</span>
+                  <Calendar className="h-5 w-5 text-primary" />
+                  <span className="text-sm"><span className="font-semibold">Since:</span> 1948</span>
                 </div>
                 <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border bg-background/60 backdrop-blur">
                   <Users className="h-5 w-5 text-primary" />
