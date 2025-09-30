@@ -109,7 +109,6 @@ export default function Catalogs() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {catalogs.map((c, i) => (
 
-
               <motion.div
                 key={c.title}
                 initial={{ y: 16, opacity: 0 }}
@@ -120,6 +119,7 @@ export default function Catalogs() {
               >
                 <Card className="border-0 shadow-sm h-full">
                   <CardContent className="p-6 flex flex-col gap-4">
+                    {/* Portrait 9:16 cover per catalog */}
                     <div className="aspect-[9/16] w-full overflow-hidden rounded-md bg-muted">
                       <img
                         src={
@@ -127,6 +127,8 @@ export default function Catalogs() {
                             ? "https://harmless-tapir-303.convex.cloud/api/storage/cbd1448f-7510-4f94-8564-47b70df43a50"
                             : c.title === "SAMIE — Journal Bearings"
                             ? "https://harmless-tapir-303.convex.cloud/api/storage/d35a5cfe-c545-4661-9723-7e115be83148"
+                            : c.title === "POWERMAN — General"
+                            ? "https://harmless-tapir-303.convex.cloud/api/storage/710bd358-735e-4966-b819-effdc9610938"
                             : "https://harmless-tapir-303.convex.cloud/api/storage/f2842a04-6c0d-4023-850d-883fc1a4dc8c"
                         }
                         alt={`${c.title} cover`}
