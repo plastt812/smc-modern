@@ -108,6 +108,8 @@ export default function Catalogs() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {catalogs.map((c, i) => (
+
+
               <motion.div
                 key={c.title}
                 initial={{ y: 16, opacity: 0 }}
