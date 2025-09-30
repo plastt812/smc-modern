@@ -129,6 +129,8 @@ export default function Catalogs() {
                             ? "https://harmless-tapir-303.convex.cloud/api/storage/d35a5cfe-c545-4661-9723-7e115be83148"
                             : c.title === "POWERMAN — General"
                             ? "https://harmless-tapir-303.convex.cloud/api/storage/1909982c-2257-4ae5-83db-0f0319d6eba3"
+                            : c.title === "SAMIE — General"
+                            ? "https://harmless-tapir-303.convex.cloud/api/storage/fa163303-b218-4096-b663-ba824dade459"
                             : "https://harmless-tapir-303.convex.cloud/api/storage/f2842a04-6c0d-4023-850d-883fc1a4dc8c"
                         }
                         alt={`${c.title} cover`}
