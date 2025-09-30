@@ -103,19 +103,19 @@ export default function About() {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: false, amount: 0.25 }}
             transition={{ type: "spring", stiffness: 220, damping: 22 }}
-            className="lg:col-span-7 h-full"
+            className="lg:col-span-7"
           >
-            <div className="max-w-2xl h-full flex flex-col justify-between">
-              <Badge variant="secondary" className="mb-3">Who We Are</Badge>
-              <h2 className="text-3xl font-bold tracking-tight mb-3">
+            <div className="max-w-2xl flex flex-col gap-4">
+              <Badge variant="secondary" className="mb-1">Who We Are</Badge>
+              <h2 className="text-3xl font-bold tracking-tight">
                 A family-built industrial partner since 1948
               </h2>
-              <p className="text-base text-muted-foreground mb-6">
+              <p className="text-base text-muted-foreground">
                 Precision manufacturing, integrated engineering, and long-term partnerships across the world's most demanding industries.
               </p>
 
               {/* Editorial rail */}
-              <div className="border-l pl-6 space-y-6 text-lg text-muted-foreground leading-relaxed">
+              <div className="mt-6 border-l pl-6 space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
                   Sanat Mansoor is a family-owned industrial company with a history dating back to 1948. From our early beginnings as a small engineering workshop, we have grown into a trusted partner for some of the most demanding industries in the world. Over the decades, we have successfully delivered more than 1,000 projects, building a reputation for reliability, precision, and innovation.
                 </p>
@@ -132,14 +132,14 @@ export default function About() {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: false, amount: 0.25 }}
             transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.06 }}
-            className="lg:col-span-5 h-full"
+            className="lg:col-span-5"
           >
-            <div className="h-full flex flex-col">
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3">
+            <div className="flex flex-col h-full">
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                 Key Metrics
               </h3>
 
-              <div className="grid sm:grid-cols-2 gap-4 mt-auto">
+              <div className="mt-4 grid sm:grid-cols-2 gap-4">
                 {/* Since 1948 */}
                 <motion.div
                   whileHover={{ y: -2, scale: 1.01 }}
