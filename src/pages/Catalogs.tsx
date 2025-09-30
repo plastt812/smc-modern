@@ -136,7 +136,7 @@ export default function Catalogs() {
                             : c.title === "SAMEE — Electrical Equipment"
                             ? "https://harmless-tapir-303.convex.cloud/api/storage/5b6763ea-6fa1-45cc-9b2d-61f66003b095"
                             : c.title === "Company — Capability Statement"
-                            ? "https://harmless-tapir-303.convex.cloud/api/storage/766056c6-a8ec-4699-a539-0e79cbd8db40"
+                            ? "https://harmless-tapir-303.convex.cloud/api/storage/c5bcab50-441f-45fb-90c6-39ecf4b8792e"
                             : "https://harmless-tapir-303.convex.cloud/api/storage/f2842a04-6c0d-4023-850d-883fc1a4dc8c"
                         }
                         alt={`${c.title} cover`}
