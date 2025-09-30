@@ -134,25 +134,88 @@ export default function About() {
             transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.06 }}
             className="lg:col-span-5"
           >
+            {/* New Key Metrics design: compact glass cards */}
             <div className="space-y-4">
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Key Metrics</h3>
-              <div className="grid sm:grid-cols-2 gap-3">
-                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border bg-background/60 backdrop-blur">
-                  <Calendar className="h-5 w-5 text-primary" />
-                  <span className="text-sm"><span className="font-semibold">Since:</span> 1948</span>
-                </div>
-                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border bg-background/60 backdrop-blur">
-                  <Users className="h-5 w-5 text-primary" />
-                  <span className="text-sm"><span className="font-semibold">Team:</span> 200+ experts</span>
-                </div>
-                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border bg-background/60 backdrop-blur">
-                  <Clock className="h-5 w-5 text-primary" />
-                  <span className="text-sm"><span className="font-semibold">On-Time Delivery:</span> 98.7%</span>
-                </div>
-                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border bg-background/60 backdrop-blur">
-                  <Award className="h-5 w-5 text-primary" />
-                  <span className="text-sm"><span className="font-semibold">Projects:</span> 1000+</span>
-                </div>
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                Key Metrics
+              </h3>
+
+              <div className="grid sm:grid-cols-2 gap-4">
+                {/* Since 1948 */}
+                <motion.div
+                  whileHover={{ y: -2, scale: 1.01 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 18 }}
+                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
+                >
+                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
+                  <div className="flex items-start gap-3">
+                    <div className="inline-flex items-center justify-center rounded-md bg-primary/10 p-2">
+                      <Calendar className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-semibold leading-tight">Since</div>
+                      <div className="text-2xl font-bold tracking-tight">1948</div>
+                      <div className="text-xs text-muted-foreground mt-1">Heritage of excellence</div>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Team */}
+                <motion.div
+                  whileHover={{ y: -2, scale: 1.01 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 18 }}
+                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
+                >
+                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
+                  <div className="flex items-start gap-3">
+                    <div className="inline-flex items-center justify-center rounded-md bg-primary/10 p-2">
+                      <Users className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-semibold leading-tight">Team</div>
+                      <div className="text-2xl font-bold tracking-tight">200+ experts</div>
+                      <div className="text-xs text-muted-foreground mt-1">Integrated engineering</div>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* On-Time Delivery */}
+                <motion.div
+                  whileHover={{ y: -2, scale: 1.01 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 18 }}
+                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
+                >
+                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
+                  <div className="flex items-start gap-3">
+                    <div className="inline-flex items-center justify-center rounded-md bg-primary/10 p-2">
+                      <Clock className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-semibold leading-tight">On‑Time Delivery</div>
+                      <div className="text-2xl font-bold tracking-tight">98.7%</div>
+                      <div className="text-xs text-muted-foreground mt-1">Reliability you can plan on</div>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Projects */}
+                <motion.div
+                  whileHover={{ y: -2, scale: 1.01 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 18 }}
+                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
+                >
+                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
+                  <div className="flex items-start gap-3">
+                    <div className="inline-flex items-center justify-center rounded-md bg-primary/10 p-2">
+                      <Award className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-semibold leading-tight">Projects</div>
+                      <div className="text-2xl font-bold tracking-tight">1000+</div>
+                      <div className="text-xs text-muted-foreground mt-1">Proven outcomes</div>
+                    </div>
+                  </div>
+                </motion.div>
               </div>
             </div>
           </motion.div>
