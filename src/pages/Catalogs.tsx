@@ -133,6 +133,8 @@ export default function Catalogs() {
                             ? "https://harmless-tapir-303.convex.cloud/api/storage/2dcd8b96-0ad7-4bf3-9695-45ad926731b9"
                             : c.title === "POWERMAN — Bolting"
                             ? "https://harmless-tapir-303.convex.cloud/api/storage/54d680b9-2e30-4a65-ba50-703806be5403"
+                            : c.title === "SAMEE — Electrical Equipment"
+                            ? "https://harmless-tapir-303.convex.cloud/api/storage/5b6763ea-6fa1-45cc-9b2d-61f66003b095"
                             : "https://harmless-tapir-303.convex.cloud/api/storage/f2842a04-6c0d-4023-850d-883fc1a4dc8c"
                         }
                         alt={`${c.title} cover`}
