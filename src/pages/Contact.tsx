@@ -123,7 +123,7 @@ export default function Contact() {
                       name="message"
                       placeholder="Tell us about your project..."
                       rows={8}
-                      className="min-h-[220px]"
+                      className="min-h-[200px]"
                       required
                     />
                   </div>
