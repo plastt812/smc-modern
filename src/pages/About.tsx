@@ -142,7 +142,7 @@ export default function About() {
                 </div>
                 <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border bg-background/60 backdrop-blur">
                   <Users className="h-5 w-5 text-primary" />
-                  <span className="text-sm"><span className="font-semibold">Team:</span> 2,000+ experts</span>
+                  <span className="text-sm"><span className="font-semibold">Team:</span> 200+ experts</span>
                 </div>
                 <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border bg-background/60 backdrop-blur">
                   <Clock className="h-5 w-5 text-primary" />
@@ -150,7 +150,7 @@ export default function About() {
                 </div>
                 <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border bg-background/60 backdrop-blur">
                   <Award className="h-5 w-5 text-primary" />
-                  <span className="text-sm"><span className="font-semibold">Certifications:</span> ISO 9001, ISO 14001</span>
+                  <span className="text-sm"><span className="font-semibold">Projects:</span> 1000+</span>
                 </div>
               </div>
             </div>
