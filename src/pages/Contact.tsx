@@ -44,7 +44,7 @@ export default function Contact() {
               <a href="/contact" className="text-foreground font-medium">Contact Us</a>
               <a href="/catalogs" className="text-muted-foreground hover:text-foreground transition-colors">Catalogs</a>
               <Button onClick={() => navigate("/")} className="ml-2">
-                Get Started
+                Back to Home
               </Button>
             </div>
           </div>
@@ -89,12 +89,21 @@ export default function Contact() {
               have a question about a specific product, need a custom solution, or want to discuss a project, our
               team of experts is here to help. Reach out to us using the information below.
             </p>
+
+
+
+            {/*
             <h3 className="text-xl font-semibold mt-6">Contact Information by Department</h3>
             <p className="text-muted-foreground">
               To ensure your inquiry is handled efficiently, please get in touch with the relevant department.
             </p>
+            */}
+
+
           </motion.div>
         </div>
+
+
         <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-3 gap-10 items-start">
           <motion.div
             initial={{ y: 20, opacity: 0 }}
@@ -123,10 +132,12 @@ export default function Contact() {
                       name="message"
                       placeholder="Tell us about your project..."
                       rows={8}
-                      className="min-h-[200px]"
+                      className="min-h-[98px]"
                       required
                     />
                   </div>
+                  
+
                   <div className="sm:col-span-2">
                     <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="inline-block">
                       <Button type="submit" className="px-8">
@@ -201,11 +212,13 @@ export default function Contact() {
               systems for mining, or custom machinery for steel production, our experts are here to help.
             </p>
           </motion.div>
-          <Card className="border-0 overflow-hidden">
+
+          
+          <Card className="border-0 overflow-hidden paddi">
             <AspectRatio ratio={16 / 9}>
               <iframe
                 title="Sanat Mansoor Location"
-                src="https://www.google.com/maps?q=Sanat%20Mansoor%20Co.%2C%20Isfahan%20Province%2C%20Industrial%20Park%2C%209th%20Street%2C%20No.%20%2378%2C%20Iran&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3366.278927552167!2d51.47626018876107!3d32.46523047664455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fbc250155b9cc25%3A0x3191bf5648209a7a!2sSanat%20Mansoor%20Co.!5e0!3m2!1sen!2sde!4v1759210998979!5m2!1sen!2sde"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
