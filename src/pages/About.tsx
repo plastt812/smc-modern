@@ -132,7 +132,7 @@ export default function About() {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: false, amount: 0.25 }}
             transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.06 }}
-            className="lg:col-span-5"
+            className="lg:col-span-5 h-full"
           >
             {/* New compact metrics stack with refined alignment */}
             <div className="flex flex-col gap-4 h-full">
@@ -142,82 +142,66 @@ export default function About() {
                 </h3>
               </div>
 
-              {/* Card grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* Card grid - make it fill remaining height and cards equal */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-1 lg:mt-2 h-full content-start">
                 {/* Since 1948 */}
                 <motion.div
                   whileHover={{ y: -3, scale: 1.02 }}
                   transition={{ type: "spring", stiffness: 320, damping: 18 }}
-                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
+                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-6 flex flex-col items-center text-center justify-center min-h-[150px]"
                 >
                   <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
-                  <div className="flex items-start gap-3">
-                    <div className="inline-flex items-center justify-center rounded-md bg-primary/10 p-2">
-                      <Calendar className="h-5 w-5 text-primary" />
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold leading-tight">Since</div>
-                      <div className="text-2xl font-bold tracking-tight">1948</div>
-                      <div className="text-xs text-muted-foreground mt-1">Heritage of excellence</div>
-                    </div>
+                  <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-2">
+                    <Calendar className="h-8 w-8 text-primary" />
                   </div>
+                  <div className="text-sm font-semibold leading-tight">Since</div>
+                  <div className="text-2xl font-bold tracking-tight">1948</div>
+                  <div className="text-xs text-muted-foreground mt-1">Heritage of excellence</div>
                 </motion.div>
 
                 {/* Team */}
                 <motion.div
                   whileHover={{ y: -3, scale: 1.02 }}
                   transition={{ type: "spring", stiffness: 320, damping: 18 }}
-                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
+                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-6 flex flex-col items-center text-center justify-center min-h-[150px]"
                 >
                   <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
-                  <div className="flex items-start gap-3">
-                    <div className="inline-flex items-center justify-center rounded-md bg-primary/10 p-2">
-                      <Users className="h-5 w-5 text-primary" />
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold leading-tight">Team</div>
-                      <div className="text-2xl font-bold tracking-tight">200+ experts</div>
-                      <div className="text-xs text-muted-foreground mt-1">Integrated engineering</div>
-                    </div>
+                  <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-2">
+                    <Users className="h-8 w-8 text-primary" />
                   </div>
+                  <div className="text-sm font-semibold leading-tight">Team</div>
+                  <div className="text-2xl font-bold tracking-tight">200+ experts</div>
+                  <div className="text-xs text-muted-foreground mt-1">Integrated engineering</div>
                 </motion.div>
 
                 {/* On‑Time Delivery */}
                 <motion.div
                   whileHover={{ y: -3, scale: 1.02 }}
                   transition={{ type: "spring", stiffness: 320, damping: 18 }}
-                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
+                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-6 flex flex-col items-center text-center justify-center min-h-[150px]"
                 >
                   <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
-                  <div className="flex items-start gap-3">
-                    <div className="inline-flex items-center justify-center rounded-md bg-primary/10 p-2">
-                      <Clock className="h-5 w-5 text-primary" />
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold leading-tight">On‑Time Delivery</div>
-                      <div className="text-2xl font-bold tracking-tight">98.7%</div>
-                      <div className="text-xs text-muted-foreground mt-1">Reliability you can plan on</div>
-                    </div>
+                  <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-2">
+                    <Clock className="h-8 w-8 text-primary" />
                   </div>
+                  <div className="text-sm font-semibold leading-tight">On‑Time Delivery</div>
+                  <div className="text-2xl font-bold tracking-tight">98.7%</div>
+                  <div className="text-xs text-muted-foreground mt-1">Reliability you can plan on</div>
                 </motion.div>
 
                 {/* Projects */}
                 <motion.div
                   whileHover={{ y: -3, scale: 1.02 }}
                   transition={{ type: "spring", stiffness: 320, damping: 18 }}
-                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
+                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-6 flex flex-col items-center text-center justify-center min-h-[150px]"
                 >
                   <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
-                  <div className="flex items-start gap-3">
-                    <div className="inline-flex items-center justify-center rounded-md bg-primary/10 p-2">
-                      <Award className="h-5 w-5 text-primary" />
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold leading-tight">Projects</div>
-                      <div className="text-2xl font-bold tracking-tight">1000+</div>
-                      <div className="text-xs text-muted-foreground mt-1">Proven outcomes</div>
-                    </div>
+                  <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-2">
+                    <Award className="h-8 w-8 text-primary" />
                   </div>
+                  <div className="text-sm font-semibold leading-tight">Projects</div>
+                  <div className="text-2xl font-bold tracking-tight">1000+</div>
+                  <div className="text-xs text-muted-foreground mt-1">Proven outcomes</div>
                 </motion.div>
               </div>
             </div>
