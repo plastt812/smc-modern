@@ -126,7 +126,7 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Right: Key metrics */}
+          {/* Right: Key metrics - realign for better balance */}
           <motion.div
             initial={{ y: 16, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -134,12 +134,13 @@ export default function About() {
             transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.06 }}
             className="lg:col-span-5"
           >
-            <div className="flex flex-col h-full">
+            <div className="flex flex-col gap-4">
               <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                 Key Metrics
               </h3>
 
-              <div className="mt-4 grid sm:grid-cols-2 gap-4">
+              {/* Use natural height grid, consistent gaps */}
+              <div className="grid sm:grid-cols-2 gap-4">
                 {/* Since 1948 */}
                 <motion.div
                   whileHover={{ y: -2, scale: 1.01 }}
