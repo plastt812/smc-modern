@@ -122,7 +122,9 @@ export default function Catalogs() {
                   <CardContent className="p-6 flex flex-col gap-4">
                     <div className="aspect-[9/16] w-full overflow-hidden rounded-md bg-muted">
                       <img
-                        src="https://harmless-tapir-303.convex.cloud/api/storage/f2842a04-6c0d-4023-850d-883fc1a4dc8c"
+                        src={c.title === "SAMIE — Mining"
+                          ? "https://harmless-tapir-303.convex.cloud/api/storage/cbd1448f-7510-4f94-8564-47b70df43a50"
+                          : "https://harmless-tapir-303.convex.cloud/api/storage/f2842a04-6c0d-4023-850d-883fc1a4dc8c"}
                         alt={`${c.title} cover`}
                         className="h-full w-full object-cover"
                         loading="lazy"
