@@ -120,7 +120,7 @@ export default function Catalogs() {
                 <Card className="border-0 shadow-sm h-full">
                   <CardContent className="p-6 flex flex-col gap-4">
                     {/* Portrait 9:16 cover per catalog */}
-                    <div className="aspect-[9/16] w-full overflow-hidden rounded-md bg-muted">
+                    <div className="aspect-[9/16] w-full overflow-visible rounded-md bg-muted">
                       <img
                         src={
                           c.title === "SAMIE — Mining"
@@ -140,7 +140,7 @@ export default function Catalogs() {
                             : "https://harmless-tapir-303.convex.cloud/api/storage/f2842a04-6c0d-4023-850d-883fc1a4dc8c"
                         }
                         alt={`${c.title} cover`}
-                        className="h-full w-full object-cover shadow-lg ring-1 ring-black/5"
+                        className="h-full w-full object-cover shadow-2xl shadow-black/20 ring-1 ring-black/10 rounded-md"
                         loading="lazy"
                       />
                     </div>
