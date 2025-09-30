@@ -140,7 +140,7 @@ export default function Catalogs() {
                             : "https://harmless-tapir-303.convex.cloud/api/storage/f2842a04-6c0d-4023-850d-883fc1a4dc8c"
                         }
                         alt={`${c.title} cover`}
-                        className="h-full w-full object-cover"
+                        className="h-full w-full object-cover shadow-sm"
                         loading="lazy"
                       />
                     </div>
