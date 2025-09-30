@@ -146,13 +146,13 @@ export default function About() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {/* Since 1948 */}
                 <motion.div
-                  whileHover={{ y: -3, scale: 1.02 }}
+                  whileHover={{ y: -3, scale: 1.01 }}
                   transition={{ type: "spring", stiffness: 320, damping: 18 }}
-                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
+                  className="relative overflow-hidden rounded-md border bg-background/60 backdrop-blur ring-1 ring-border p-4"
                 >
-                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
+                  <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-primary to-primary/40" />
                   <div className="flex items-start gap-3">
-                    <div className="inline-flex items-center justify-center rounded-md bg-primary/10 p-2">
+                    <div className="inline-flex items-center justify-center rounded-none bg-primary/10 p-2">
                       <Calendar className="h-5 w-5 text-primary" />
                     </div>
                     <div>
@@ -165,13 +165,13 @@ export default function About() {
 
                 {/* Team */}
                 <motion.div
-                  whileHover={{ y: -3, scale: 1.02 }}
+                  whileHover={{ y: -3, scale: 1.01 }}
                   transition={{ type: "spring", stiffness: 320, damping: 18 }}
-                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
+                  className="relative overflow-hidden rounded-md border bg-background/60 backdrop-blur ring-1 ring-border p-4"
                 >
-                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
+                  <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-primary to-primary/40" />
                   <div className="flex items-start gap-3">
-                    <div className="inline-flex items-center justify-center rounded-md bg-primary/10 p-2">
+                    <div className="inline-flex items-center justify-center rounded-none bg-primary/10 p-2">
                       <Users className="h-5 w-5 text-primary" />
                     </div>
                     <div>
@@ -184,13 +184,13 @@ export default function About() {
 
                 {/* On‑Time Delivery */}
                 <motion.div
-                  whileHover={{ y: -3, scale: 1.02 }}
+                  whileHover={{ y: -3, scale: 1.01 }}
                   transition={{ type: "spring", stiffness: 320, damping: 18 }}
-                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
+                  className="relative overflow-hidden rounded-md border bg-background/60 backdrop-blur ring-1 ring-border p-4"
                 >
-                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
+                  <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-primary to-primary/40" />
                   <div className="flex items-start gap-3">
-                    <div className="inline-flex items-center justify-center rounded-md bg-primary/10 p-2">
+                    <div className="inline-flex items-center justify-center rounded-none bg-primary/10 p-2">
                       <Clock className="h-5 w-5 text-primary" />
                     </div>
                     <div>
@@ -203,13 +203,13 @@ export default function About() {
 
                 {/* Projects */}
                 <motion.div
-                  whileHover={{ y: -3, scale: 1.02 }}
+                  whileHover={{ y: -3, scale: 1.01 }}
                   transition={{ type: "spring", stiffness: 320, damping: 18 }}
-                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
+                  className="relative overflow-hidden rounded-md border bg-background/60 backdrop-blur ring-1 ring-border p-4"
                 >
-                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
+                  <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-primary to-primary/40" />
                   <div className="flex items-start gap-3">
-                    <div className="inline-flex items-center justify-center rounded-md bg-primary/10 p-2">
+                    <div className="inline-flex items-center justify-center rounded-none bg-primary/10 p-2">
                       <Award className="h-5 w-5 text-primary" />
                     </div>
                     <div>
