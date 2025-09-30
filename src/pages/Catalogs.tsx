@@ -13,6 +13,11 @@ type Catalog = {
 
 const catalogs = [
   {
+    title: "Company — Capability Statement",
+    description: "Company profile, sectors, and integrated capabilities.",
+    href: "http://smansoor.com/catalogs/capability_statement.pdf",
+  },
+  {
     title: "SAMIE — Steel",
     description: "Comprehensive catalog for steel industry equipment and solutions.",
     href: "http://smansoor.com/catalogs/samie_steel.pdf",
@@ -46,11 +51,6 @@ const catalogs = [
     title: "SAMEE — Electrical Equipment",
     description: "Industrial plugs, sockets, festoon systems, and sirens.",
     href: "http://smansoor.com/catalogs/samee.pdf",
-  },
-  {
-    title: "Company — Capability Statement",
-    description: "Company profile, sectors, and integrated capabilities.",
-    href: "http://smansoor.com/catalogs/capability_statement.pdf",
   },
 ] as const;
 
@@ -135,6 +135,8 @@ export default function Catalogs() {
                             ? "https://harmless-tapir-303.convex.cloud/api/storage/54d680b9-2e30-4a65-ba50-703806be5403"
                             : c.title === "SAMEE — Electrical Equipment"
                             ? "https://harmless-tapir-303.convex.cloud/api/storage/5b6763ea-6fa1-45cc-9b2d-61f66003b095"
+                            : c.title === "Company — Capability Statement"
+                            ? "https://harmless-tapir-303.convex.cloud/api/storage/766056c6-a8ec-4699-a539-0e79cbd8db40"
                             : "https://harmless-tapir-303.convex.cloud/api/storage/f2842a04-6c0d-4023-850d-883fc1a4dc8c"
                         }
                         alt={`${c.title} cover`}
