@@ -191,8 +191,6 @@ export default function Home() {
 
 
 
-      
-
       {/* Features Section (moved: now Our Brands) */}
       <section className="py-20 relative" id="services">
         {/* Background image for Our Brands section */}
@@ -203,9 +201,12 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-background/40" />
         <div className="relative z-10 max-w-7xl mx-auto px-8">
+          {/* Animate section header */}
           <motion.div
             initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: false, amount: 0.25 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold tracking-tight mb-4">
@@ -217,11 +218,14 @@ export default function Home() {
             </p>
           </motion.div>
 
+          {/* Stagger cards */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.05 }}
+              initial={{ y: 24, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.5, delay: 0.05, ease: "easeOut" }}
+              whileHover={{ y: -4, scale: 1.02, transition: { type: "spring", stiffness: 320, damping: 18 } }}
             >
               <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
@@ -242,9 +246,11 @@ export default function Home() {
             </motion.div>
 
             <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
+              initial={{ y: 24, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.5, delay: 0.15, ease: "easeOut" }}
+              whileHover={{ y: -4, scale: 1.02, transition: { type: "spring", stiffness: 320, damping: 18 } }}
             >
               <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
@@ -265,9 +271,11 @@ export default function Home() {
             </motion.div>
 
             <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.15 }}
+              initial={{ y: 24, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.5, delay: 0.25, ease: "easeOut" }}
+              whileHover={{ y: -4, scale: 1.02, transition: { type: "spring", stiffness: 320, damping: 18 } }}
             >
               <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
