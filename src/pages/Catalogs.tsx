@@ -11,23 +11,48 @@ type Catalog = {
   href: string;
 };
 
-const catalogs: Array<Catalog> = [
+const catalogs = [
   {
-    title: "POWERMAN — Hydraulic Tools Catalog",
-    description: "Cylinders, pumps, torque wrenches, crimpers, hoses, and accessories (up to 700 bar).",
-    href: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+    title: "SAMIE — Steel",
+    description: "Comprehensive catalog for steel industry equipment and solutions.",
+    href: "http://smansoor.com/catalogs/samie_steel.pdf",
   },
   {
-    title: "SAMIE — Heavy Industrial Equipment",
-    description: "Cone crushers, HPGR, liner handlers, bearings, and turnkey line solutions.",
-    href: "https://www.adobe.com/support/products/enterprise/knowledgecenter/media/c4611_sample_explain.pdf",
+    title: "SAMIE — Mining",
+    description: "Equipment and systems designed for mining applications.",
+    href: "http://smansoor.com/catalogs/samie_mining.pdf",
+  },
+  {
+    title: "SAMIE — Journal Bearings",
+    description: "Technical specs and product range for journal bearings.",
+    href: "http://smansoor.com/catalogs/samie_journal_bearings.pdf",
+  },
+  {
+    title: "SAMIE — General",
+    description: "General product overview and capabilities from SAMIE.",
+    href: "http://smansoor.com/catalogs/samie_general.pdf",
+  },
+  {
+    title: "POWERMAN — General",
+    description: "Hydraulic tools overview, specs, and use cases.",
+    href: "http://smansoor.com/catalogs/powerman_general.pdf",
+  },
+  {
+    title: "POWERMAN — Bolting",
+    description: "High‑pressure bolting solutions and torque systems.",
+    href: "http://smansoor.com/catalogs/powerman_bolting.pdf",
   },
   {
     title: "SAMEE — Electrical Equipment",
-    description: "Industrial plugs & sockets, cable festoon systems, and safety sirens.",
-    href: "https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf",
+    description: "Industrial plugs, sockets, festoon systems, and sirens.",
+    href: "http://smansoor.com/catalogs/samee.pdf",
   },
-];
+  {
+    title: "Company — Capability Statement",
+    description: "Company profile, sectors, and integrated capabilities.",
+    href: "http://smansoor.com/catalogs/capability_statement.pdf",
+  },
+] as const;
 
 export default function Catalogs() {
   const navigate = useNavigate();
