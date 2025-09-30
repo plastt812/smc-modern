@@ -119,7 +119,13 @@ export default function Contact() {
                   </div>
                   <div className="sm:col-span-2">
                     <label className="text-sm font-medium mb-2 block">Message</label>
-                    <Textarea name="message" placeholder="Tell us about your project..." rows={6} required />
+                    <Textarea
+                      name="message"
+                      placeholder="Tell us about your project..."
+                      rows={10}
+                      className="min-h-[260px]"
+                      required
+                    />
                   </div>
                   <div className="sm:col-span-2">
                     <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="inline-block">
