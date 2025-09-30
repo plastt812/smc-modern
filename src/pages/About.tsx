@@ -105,7 +105,7 @@ export default function About() {
             transition={{ type: "spring", stiffness: 220, damping: 22 }}
             className="lg:col-span-7 h-full"
           >
-            <div className="max-w-2xl h-full flex flex-col">
+            <div className="max-w-2xl h-full flex flex-col justify-between">
               <Badge variant="secondary" className="mb-3">Who We Are</Badge>
               <h2 className="text-3xl font-bold tracking-tight mb-3">
                 A family-built industrial partner since 1948
@@ -134,18 +134,17 @@ export default function About() {
             transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.06 }}
             className="lg:col-span-5 h-full"
           >
-            {/* New Key Metrics design: compact glass cards */}
-            <div className="space-y-4 h-full flex flex-col">
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+            <div className="h-full flex flex-col">
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3">
                 Key Metrics
               </h3>
 
-              <div className="grid sm:grid-cols-2 gap-4 flex-1 content-stretch">
+              <div className="grid sm:grid-cols-2 gap-4 mt-auto">
                 {/* Since 1948 */}
                 <motion.div
                   whileHover={{ y: -2, scale: 1.01 }}
                   transition={{ type: "spring", stiffness: 300, damping: 18 }}
-                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4 h-full"
+                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
                 >
                   <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
                   <div className="flex items-start gap-3">
@@ -164,7 +163,7 @@ export default function About() {
                 <motion.div
                   whileHover={{ y: -2, scale: 1.01 }}
                   transition={{ type: "spring", stiffness: 300, damping: 18 }}
-                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4 h-full"
+                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
                 >
                   <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
                   <div className="flex items-start gap-3">
@@ -179,11 +178,11 @@ export default function About() {
                   </div>
                 </motion.div>
 
-                {/* On-Time Delivery */}
+                {/* On‑Time Delivery */}
                 <motion.div
                   whileHover={{ y: -2, scale: 1.01 }}
                   transition={{ type: "spring", stiffness: 300, damping: 18 }}
-                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4 h-full"
+                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
                 >
                   <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
                   <div className="flex items-start gap-3">
@@ -202,7 +201,7 @@ export default function About() {
                 <motion.div
                   whileHover={{ y: -2, scale: 1.01 }}
                   transition={{ type: "spring", stiffness: 300, damping: 18 }}
-                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4 h-full"
+                  className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
                 >
                   <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
                   <div className="flex items-start gap-3">
