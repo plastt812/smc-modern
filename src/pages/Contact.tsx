@@ -158,37 +158,40 @@ export default function Contact() {
             transition={{ delay: 0.1 }}
             className="space-y-6 self-start"
           >
+            {/* Phone card - make contents bigger */}
             <Card className="border-0">
-              <CardContent className="p-6 text-sm">
-                <div className="flex items-start gap-3">
-                  <Phone className="h-5 w-5 text-primary mt-0.5" />
-                  <div>
-                    <div className="font-semibold">Phone</div>
-                    <div className="text-muted-foreground">+1 (555) 123-4567</div>
+              <CardContent className="p-8 text-sm">
+                <div className="flex items-start gap-4">
+                  <Phone className="h-7 w-7 text-primary mt-0.5" />
+                  <div className="space-y-1">
+                    <div className="font-semibold text-base">Phone</div>
+                    <div className="text-muted-foreground text-[0.98rem]">+1 (555) 123-4567</div>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
+            {/* Email card - make contents bigger */}
             <Card className="border-0">
-              <CardContent className="p-6 text-sm">
-                <div className="flex items-start gap-3">
-                  <Mail className="h-5 w-5 text-primary mt-0.5" />
-                  <div>
-                    <div className="font-semibold">Email</div>
-                    <div className="text-muted-foreground">info@sanatmansoor.com</div>
+              <CardContent className="p-8 text-sm">
+                <div className="flex items-start gap-4">
+                  <Mail className="h-7 w-7 text-primary mt-0.5" />
+                  <div className="space-y-1">
+                    <div className="font-semibold text-base">Email</div>
+                    <div className="text-muted-foreground text-[0.98rem]">info@sanatmansoor.com</div>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
+            {/* Address card - make contents bigger */}
             <Card className="border-0">
-              <CardContent className="p-6 text-sm">
-                <div className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 text-primary mt-0.5" />
-                  <div>
-                    <div className="font-semibold">Address</div>
-                    <div className="text-muted-foreground">
+              <CardContent className="p-8 text-sm">
+                <div className="flex items-start gap-4">
+                  <MapPin className="h-7 w-7 text-primary mt-0.5" />
+                  <div className="space-y-1">
+                    <div className="font-semibold text-base">Address</div>
+                    <div className="text-muted-foreground text-[0.98rem]">
                       #78, 9th Street, Oshtorjan Industrial City, Isfahan Province, Iran
                     </div>
                   </div>
