@@ -134,16 +134,20 @@ export default function About() {
             transition={{ type: "spring", stiffness: 220, damping: 22, delay: 0.06 }}
             className="lg:col-span-5"
           >
-            <div className="flex flex-col h-full">
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                Key Metrics
-              </h3>
+            {/* New compact metrics stack with refined alignment */}
+            <div className="flex flex-col gap-4 h-full">
+              <div className="flex items-center justify-between">
+                <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                  Key Metrics
+                </h3>
+              </div>
 
-              <div className="mt-4 grid sm:grid-cols-2 gap-4">
+              {/* Card grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {/* Since 1948 */}
                 <motion.div
-                  whileHover={{ y: -2, scale: 1.01 }}
-                  transition={{ type: "spring", stiffness: 300, damping: 18 }}
+                  whileHover={{ y: -3, scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 320, damping: 18 }}
                   className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
                 >
                   <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
@@ -161,8 +165,8 @@ export default function About() {
 
                 {/* Team */}
                 <motion.div
-                  whileHover={{ y: -2, scale: 1.01 }}
-                  transition={{ type: "spring", stiffness: 300, damping: 18 }}
+                  whileHover={{ y: -3, scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 320, damping: 18 }}
                   className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
                 >
                   <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
@@ -180,8 +184,8 @@ export default function About() {
 
                 {/* On‑Time Delivery */}
                 <motion.div
-                  whileHover={{ y: -2, scale: 1.01 }}
-                  transition={{ type: "spring", stiffness: 300, damping: 18 }}
+                  whileHover={{ y: -3, scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 320, damping: 18 }}
                   className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
                 >
                   <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
@@ -199,8 +203,8 @@ export default function About() {
 
                 {/* Projects */}
                 <motion.div
-                  whileHover={{ y: -2, scale: 1.01 }}
-                  transition={{ type: "spring", stiffness: 300, damping: 18 }}
+                  whileHover={{ y: -3, scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 320, damping: 18 }}
                   className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border p-4"
                 >
                   <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
