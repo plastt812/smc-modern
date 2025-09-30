@@ -106,47 +106,21 @@ export default function About() {
           >
             <div className="max-w-2xl">
               <Badge variant="secondary" className="mb-3">Who We Are</Badge>
-              {/* REWORK: title + summary card */}
-              <div className="relative overflow-hidden rounded-xl border bg-background/60 backdrop-blur ring-1 ring-border">
-                {/* gradient accent edge */}
-                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-primary/40" />
-                <div className="p-6 sm:p-7">
-                  <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">
-                    A family-built industrial partner since 1948
-                  </h2>
-                  <p className="mt-3 text-base text-muted-foreground">
-                    Seven decades of precision manufacturing and integrated engineering—trusted by leaders in
-                    steel, mining, oil & gas, and power generation.
-                  </p>
+              <h2 className="text-3xl font-bold tracking-tight mb-3">
+                A family-built industrial partner since 1948
+              </h2>
+              <p className="text-base text-muted-foreground mb-6">
+                Precision manufacturing, integrated engineering, and long-term partnerships across the world's most demanding industries.
+              </p>
 
-                  {/* compact highlights */}
-                  <div className="mt-5 grid sm:grid-cols-3 gap-3">
-                    <div className="rounded-lg border bg-background/70 px-4 py-3">
-                      <div className="text-sm font-semibold">1,000+ projects</div>
-                      <div className="text-xs text-muted-foreground">Measurable results delivered</div>
-                    </div>
-                    <div className="rounded-lg border bg-background/70 px-4 py-3">
-                      <div className="text-sm font-semibold">ISO certified</div>
-                      <div className="text-xs text-muted-foreground">Quality systems you can trust</div>
-                    </div>
-                    <div className="rounded-lg border bg-background/70 px-4 py-3">
-                      <div className="text-sm font-semibold">End‑to‑end</div>
-                      <div className="text-xs text-muted-foreground">Design, build, sustain</div>
-                    </div>
-                  </div>
-
-                  {/* editorial rail condensed */}
-                  <div className="mt-6 border-l pl-5 space-y-4 text-base leading-relaxed text-muted-foreground">
-                    <p>
-                      From a single workshop to a multi‑disciplinary operation, our family heritage anchors a culture
-                      of reliability, precision, and continuous improvement.
-                    </p>
-                    <p>
-                      We pair legacy craftsmanship with modern processes to deliver equipment and systems that endure
-                      the toughest conditions—backed by long‑term partnerships.
-                    </p>
-                  </div>
-                </div>
+              {/* Editorial rail */}
+              <div className="border-l pl-6 space-y-6 text-lg text-muted-foreground leading-relaxed">
+                <p>
+                  Sanat Mansoor is a family-owned industrial company with a history dating back to 1948. From our early beginnings as a small engineering workshop, we have grown into a trusted partner for some of the most demanding industries in the world. Over the decades, we have successfully delivered more than 1,000 projects, building a reputation for reliability, precision, and innovation.
+                </p>
+                <p>
+                  For over 50 years, we have worked alongside leaders in steel production, oil &amp; gas, mining, power generation, and construction. Each project has reinforced our commitment to engineering excellence and long-term partnerships. Today, Sanat Mansoor continues to combine tradition with innovation — delivering solutions that stand the test of time.
+                </p>
               </div>
             </div>
           </motion.div>
