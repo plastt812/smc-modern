@@ -122,8 +122,8 @@ export default function Contact() {
                     <Textarea
                       name="message"
                       placeholder="Tell us about your project..."
-                      rows={10}
-                      className="min-h-[260px]"
+                      rows={8}
+                      className="min-h-[220px]"
                       required
                     />
                   </div>
