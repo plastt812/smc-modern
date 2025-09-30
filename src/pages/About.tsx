@@ -451,7 +451,7 @@ export default function About() {
       <section className="py-20 relative">
         {/* Background image */}
         <img
-          src="https://harmless-tapir-303.convex.cloud/api/storage/289473bd-0e30-4a18-b01a-07e942298152"
+          src="https://harmless-tapir-303.convex.cloud/api/storage/da3d46b7-b07a-49d9-bf79-91a6f3cbec4c"
           alt=""
           className="absolute inset-0 h-full w-full object-cover opacity-20 select-none pointer-events-none"
         />
