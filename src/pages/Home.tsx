@@ -692,15 +692,15 @@ export default function Home() {
               <h4 className="font-semibold mb-3">Contact</h4>
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-3">
-                  <Phone className="h-4 w-4 text-primary mt-0.5" />
+                  <Phone className="h-5 w-5 text-primary mt-0.5" />
                   <span className="text-muted-foreground">+1 (555) 123-4567</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Mail className="h-4 w-4 text-primary mt-0.5" />
+                  <Mail className="h-5 w-5 text-primary mt-0.5" />
                   <span className="text-muted-foreground">info@sanatmansoor.com</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <MapPin className="h-4 w-4 text-primary mt-0.5" />
+                  <MapPin className="h-5 w-5 text-primary mt-0.5" />
                   <span className="text-muted-foreground">
                     #78, 9th Street, Oshtorjan Industrial City, Isfahan Province, Iran
                   </span>
